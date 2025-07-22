@@ -1,0 +1,1567 @@
+[
+    {
+        "name": "Hand Pump",
+        "url": "https://sonmezoutdoor.us/product/hand-pumps/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "LONDON 360 DISCOVER",
+        "url": "https://sonmezoutdoor.us/product/london-360-discover-8-10-person-red/",
+        "colors": [
+            {
+                "color": "Desert Camo",
+                "price": 4605.0,
+                "sku": "London-360-D-1-2"
+            },
+            {
+                "color": "Desert Color",
+                "price": 4200.0,
+                "sku": "London-360-D-1-2"
+            },
+            {
+                "color": "Yellow",
+                "price": 4200.0,
+                "sku": "London-360-D-1-2"
+            },
+            {
+                "color": "Orange",
+                "price": 4200.0,
+                "sku": "London-360-D-1-2"
+            },
+            {
+                "color": "Green",
+                "price": 4200.0,
+                "sku": "London-360-D-1-2"
+            },
+            {
+                "color": "Grey",
+                "price": 4200.0,
+                "sku": "London-360-D-1-2"
+            },
+            {
+                "color": "Red",
+                "price": 4200.0,
+                "sku": "London-360-D-1-2"
+            }
+        ],
+        "capacity": {
+            "camping": 10,
+            "glamping": 8
+        },
+        "dimensions": "W: 11.5 ft (137\") L: 10.3 ft (124\") H: 7.7 ft (92\")",
+        "floor_space": "118.4 sq ft",
+        "internal_area": "107.6 sq ft",
+        "weight": "132 lb",
+        "doors": 2,
+        "windows": 8,
+        "inflation_time": "5 Minutes",
+        "material_details": [
+            "Carrying Case: W: 31.5\" x L: 43\" x H: 31.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "AERO CABIN",
+        "url": "https://sonmezoutdoor.us/product/aero-cabin-green/",
+        "colors": [
+            {
+                "color": "Top: Orange Smz 013, Bottom: Smz 017",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Gray Smz 016, Bottom: Desert Color",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Green Smz 015, Bottom: Desert Color",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Orange Smz 013, Bottom: Desert Color",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Red Smz 012, Bottom: Desert Color",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Yellow Smz 014, Bottom: Desert Color",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Desert Color Smz 011, Bottom: Smz 017",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Desert Color Smz 011, Bottom: Smz 018",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Desert Color Smz 011, Bottom: Smz 019",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Desert Color Smz 011, Bottom: Smz 020",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Gray Smz 016, Bottom: Smz 017",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Gray Smz 016, Bottom: Smz 018",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Gray Smz 016, Bottom: Smz 019",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Gray Smz 016, Bottom: Smz 020",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Green Smz 015, Bottom: Smz 017",
+                "price": 10650.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Green Smz 015, Bottom: Smz 018",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Green Smz 015, Bottom: Smz 019",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Green Smz 015, Bottom: Smz 020",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Orange Smz 013, Bottom: Smz 017",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Orange Smz 013, Bottom: Smz 018",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Orange Smz 013, Bottom: Smz 019",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Orange Smz 013, Bottom: Smz 020",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Red Smz 012, Bottom: Smz 017",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Red Smz 012, Bottom: Smz 018",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Red Smz 012, Bottom: Smz 019",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Red Smz 012, Bottom: Smz 020",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Yellow Smz 014, Bottom: Smz 017",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Yellow Smz 014, Bottom: Smz 018",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Yellow Smz 014, Bottom: Smz 019",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            },
+            {
+                "color": "Top: Yellow Smz 014, Bottom: Smz 020",
+                "price": 10500.0,
+                "sku": "AERO CABIN-GREEN"
+            }
+        ],
+        "capacity": {
+            "camping": 10,
+            "glamping": 8
+        },
+        "dimensions": "W: 13.7 ft (165\") x L: 16.8 ft (202\") x H: 10.8 ft (130\")",
+        "floor_space": "220.7 sq ft",
+        "internal_area": "195.9 sq ft",
+        "weight": "209 lb",
+        "doors": 1,
+        "windows": 12,
+        "inflation_time": "10 Minutes",
+        "material_details": [
+            "Carrying Case: W: 31.5\" x L: 43\" x H: 31.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "LONDON FAMILY",
+        "url": "https://sonmezoutdoor.us/product/london-family-8-10-person-4-season-inflatable-tent-grey/",
+        "colors": [
+            {
+                "color": "Desert Camo",
+                "price": 3395.0,
+                "sku": "London-F01-G"
+            },
+            {
+                "color": "Yellow",
+                "price": 3100.0,
+                "sku": "London-F01-G"
+            },
+            {
+                "color": "Orange",
+                "price": 3100.0,
+                "sku": "London-F01-G"
+            },
+            {
+                "color": "Desert Color",
+                "price": 3100.0,
+                "sku": "London-F01-G"
+            },
+            {
+                "color": "Green",
+                "price": 3100.0,
+                "sku": "London-F01-G"
+            },
+            {
+                "color": "Grey",
+                "price": 3100.0,
+                "sku": "London-F01-G"
+            },
+            {
+                "color": "Red",
+                "price": 3100.0,
+                "sku": "London-F01-G"
+            }
+        ],
+        "capacity": {
+            "camping": 10,
+            "glamping": 8
+        },
+        "dimensions": "W: 10.6 ft (127\") L: 9.8 ft (118\") H: 7.3 ft (88\")",
+        "floor_space": "104.9 sq ft",
+        "internal_area": "96.9 sq ft",
+        "weight": "88 lb",
+        "doors": 2,
+        "windows": 6,
+        "inflation_time": "5 Minutes",
+        "material_details": [
+            "Carrying Case: W: 19.5\"  x L: 31.5\" x H: 19.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "Bravo GE BTP-2 12V Inflation Pump",
+        "url": "https://sonmezoutdoor.us/product/bravo-ge-btp-2-12v-inflation-pump/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "Floor Mat (490×370)",
+        "url": "https://sonmezoutdoor.us/product/floor-mat-490x370/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "16 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/16-fixing-stakes/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "SÖNMEZ FLOATING TENT",
+        "url": "https://sonmezoutdoor.us/product/sonmez-floating-tent-desert/",
+        "colors": [
+            {
+                "color": "Desert Color",
+                "price": 4199.0,
+                "sku": "FLOATING-T1-1"
+            },
+            {
+                "color": "Orange",
+                "price": 4199.0,
+                "sku": "FLOATING-T1-1"
+            }
+        ],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": "50 kg / 110 lb",
+        "doors": null,
+        "windows": null,
+        "inflation_time": "5 Minutes",
+        "material_details": [
+            "Interior Dimensions: 200cm (L) x 200cm (W) x 200cm (H) / 78in x 78in x 78in",
+            "Interior Usage Area: 4m² / 43ft²",
+            "Capacity: : 4 Persons",
+            "Carrying Case: 110cm (L) x 50cm (W) x 50cm (H) / 43in x 19in x 19in",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °C (EN 1876-1)",
+            "High Temperature: +70 °C PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)"
+        ],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "LONDON PRESTIGE (M) – 6 UNIT",
+        "url": "https://sonmezoutdoor.us/product/london-prestige-m/",
+        "colors": [
+            {
+                "color": "Desert Color",
+                "price": 12231.0,
+                "sku": "London-PM02-1"
+            }
+        ],
+        "capacity": {
+            "camping": 6,
+            "glamping": 5
+        },
+        "dimensions": "W: 9.19 ft (110.24\") L: 8.86 ft (106.30\") H: 7.05 ft (84.65\")",
+        "floor_space": "80.7 sq ft",
+        "internal_area": "72.6 sq ft",
+        "weight": "99 lb",
+        "doors": 1,
+        "windows": 5,
+        "inflation_time": "4 Minutes",
+        "material_details": [
+            "Carrying Case: W: 19.5\"  x L: 31.5\" x H: 19.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "AIR BUSHCRAFT PREMIUM",
+        "url": "https://sonmezoutdoor.us/product/air-bushcraft-premium-2-4-person-green/",
+        "colors": [
+            {
+                "color": "Desert Camo",
+                "price": 1635.0,
+                "sku": "Bushcraft-PREMIUM2"
+            },
+            {
+                "color": "Orange",
+                "price": 1500.0,
+                "sku": "Bushcraft-PREMIUM2"
+            },
+            {
+                "color": "Yellow",
+                "price": 1500.0,
+                "sku": "Bushcraft-PREMIUM2"
+            },
+            {
+                "color": "Desert Color",
+                "price": 1500.0,
+                "sku": "Bushcraft-PREMIUM2"
+            },
+            {
+                "color": "Green",
+                "price": 1500.0,
+                "sku": "Bushcraft-PREMIUM2"
+            },
+            {
+                "color": "Red",
+                "price": 1500.0,
+                "sku": "Bushcraft-PREMIUM2"
+            },
+            {
+                "color": "Grey",
+                "price": 1500.0,
+                "sku": "Bushcraft-PREMIUM2"
+            }
+        ],
+        "capacity": {
+            "camping": 3,
+            "glamping": 2
+        },
+        "dimensions": "W: 7.5 ft (90\") L: 8.5 ft (102\") H: 7.2 ft (87\")",
+        "floor_space": "63.5 sq ft",
+        "internal_area": "47.4 sq ft",
+        "weight": "55 lb",
+        "doors": 1,
+        "windows": 5,
+        "inflation_time": "2 Minutes",
+        "material_details": [
+            "Carrying Case: W: 19.5\"  x L: 31.5\" x H: 19.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "6 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/6-fixing-stakes/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "Fireproof Stove Mat (150×100)",
+        "url": "https://sonmezoutdoor.us/product/fireproof-stove-mat-150x100/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "SÖNMEZ AIR BUNGALOW",
+        "url": "https://sonmezoutdoor.us/product/sonmez-air-bungalow/",
+        "colors": [
+            {
+                "color": "Desert Camo",
+                "price": 7465.0,
+                "sku": "AIR-BUNGALOW"
+            },
+            {
+                "color": "Orange",
+                "price": 6800.0,
+                "sku": "AIR-BUNGALOW"
+            },
+            {
+                "color": "Yellow",
+                "price": 6800.0,
+                "sku": "AIR-BUNGALOW"
+            },
+            {
+                "color": "Desert Color",
+                "price": 6800.0,
+                "sku": "AIR-BUNGALOW"
+            },
+            {
+                "color": "Grey",
+                "price": 6800.0,
+                "sku": "AIR-BUNGALOW"
+            },
+            {
+                "color": "Red",
+                "price": 6800.0,
+                "sku": "AIR-BUNGALOW"
+            },
+            {
+                "color": "Green",
+                "price": 6800.0,
+                "sku": "AIR-BUNGALOW"
+            }
+        ],
+        "capacity": {
+            "camping": 10,
+            "glamping": 8
+        },
+        "dimensions": "W: 11.1 ft (133\") L: 15.5 ft (185\") H: 11.5 ft (137\")",
+        "floor_space": "172.2 sq ft",
+        "internal_area": "145.3 sq ft",
+        "weight": "165 lb",
+        "doors": 2,
+        "windows": 8,
+        "inflation_time": "10 Minutes",
+        "material_details": [
+            "Carrying Case: W: 31.5\" x L: 43\" x H: 31.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [
+            "Carry Bag",
+            "Metal Tent Pegs",
+            "Reflective Guylines",
+            "Repair Kit",
+            "User Manual",
+            "Floor Mat",
+            "Fireproof Stove Mat",
+            "Organizer",
+            "Digital Air Pump"
+        ],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "LONDON MAXIA 480",
+        "url": "https://sonmezoutdoor.us/product/london-maxia-480-3-room-tent-14-person-red/",
+        "colors": [
+            {
+                "color": "Desert Camo",
+                "price": 7465.0,
+                "sku": "London-Maxia-480-R"
+            },
+            {
+                "color": "Yellow",
+                "price": 6800.0,
+                "sku": "London-Maxia-480-R"
+            },
+            {
+                "color": "Orange",
+                "price": 6800.0,
+                "sku": "London-Maxia-480-R"
+            },
+            {
+                "color": "Desert Color",
+                "price": 6800.0,
+                "sku": "London-Maxia-480-R"
+            },
+            {
+                "color": "Green",
+                "price": 6800.0,
+                "sku": "London-Maxia-480-R"
+            },
+            {
+                "color": "Grey",
+                "price": 6800.0,
+                "sku": "London-Maxia-480-R"
+            },
+            {
+                "color": "Red",
+                "price": 6800.0,
+                "sku": "London-Maxia-480-R"
+            }
+        ],
+        "capacity": {
+            "camping": 14,
+            "glamping": 12
+        },
+        "dimensions": "W: 11.8 ft (141\") L: 15.7 ft (189\") H: 7.5 ft (90\")",
+        "floor_space": "185.1 sq ft",
+        "internal_area": "174.4 sq ft",
+        "weight": "165 lb",
+        "doors": 2,
+        "windows": 14,
+        "inflation_time": "10 Minutes",
+        "material_details": [
+            "Carrying Case: W: 31.5\" x L: 47\" x H: 31.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "AIR CAPSULE XXL",
+        "url": "https://sonmezoutdoor.us/product/air-capsule-xxl-orange/",
+        "colors": [
+            {
+                "color": "Desert Camo",
+                "price": 7465.0,
+                "sku": "AIR CAPSULE XXL-1"
+            },
+            {
+                "color": "Orange",
+                "price": 6800.0,
+                "sku": "AIR CAPSULE XXL-1"
+            },
+            {
+                "color": "Yellow",
+                "price": 6800.0,
+                "sku": "AIR CAPSULE XXL-1"
+            },
+            {
+                "color": "Desert Color",
+                "price": 6800.0,
+                "sku": "AIR CAPSULE XXL-1"
+            },
+            {
+                "color": "Grey",
+                "price": 6800.0,
+                "sku": "AIR CAPSULE XXL-1"
+            },
+            {
+                "color": "Red",
+                "price": 6800.0,
+                "sku": "AIR CAPSULE XXL-1"
+            },
+            {
+                "color": "Green",
+                "price": 6800.0,
+                "sku": "AIR CAPSULE XXL-1"
+            }
+        ],
+        "capacity": {
+            "camping": 10,
+            "glamping": null
+        },
+        "dimensions": "W: 17.1 ft (204\") x L: 10.5 ft (126\") x H: 8.5 ft (102\")",
+        "floor_space": "178.7 sq ft",
+        "internal_area": "118.4 sq ft",
+        "weight": "176 lb",
+        "doors": 1,
+        "windows": 7,
+        "inflation_time": "10 Minutes",
+        "material_details": [
+            "Glamping  Capacity: : 8 Persons",
+            "Carrying Case: W: 29.5\" x L: 39\" x H: 21.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "10 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/10-fixing-stakess/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "12 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/12-fixing-stakess/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "4 Pieces Yellow Tension Lanyard (Reflective)",
+        "url": "https://sonmezoutdoor.us/product/4pieces-yellow-tension-lanyard-reflective/",
+        "colors": [
+            {
+                "color": "Orange",
+                "price": 10.0,
+                "sku": "4 Pieces Yellow Tension Lanyard"
+            },
+            {
+                "color": "Yellow",
+                "price": 10.0,
+                "sku": "4 Pieces Yellow Tension Lanyard"
+            },
+            {
+                "color": "Red",
+                "price": 10.0,
+                "sku": "4 Pieces Yellow Tension Lanyard"
+            },
+            {
+                "color": "Green",
+                "price": 10.0,
+                "sku": "4 Pieces Yellow Tension Lanyard"
+            }
+        ],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "4 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/4fixing-stakes/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "Sönmez Outdoor Rechargeable Digital Air Pump",
+        "url": "https://sonmezoutdoor.us/product/sonmez-outdoor-rechargeable-digital-air-pump/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "AIR AQUILA",
+        "url": "https://sonmezoutdoor.us/product/air-aquila-red/",
+        "colors": [
+            {
+                "color": "Desert Camo",
+                "price": 7465.0,
+                "sku": "AIR AQUILA-RED"
+            },
+            {
+                "color": "Orange",
+                "price": 6800.0,
+                "sku": "AIR AQUILA-RED"
+            },
+            {
+                "color": "Yellow",
+                "price": 6800.0,
+                "sku": "AIR AQUILA-RED"
+            },
+            {
+                "color": "Desert Color",
+                "price": 6800.0,
+                "sku": "AIR AQUILA-RED"
+            },
+            {
+                "color": "Grey",
+                "price": 6800.0,
+                "sku": "AIR AQUILA-RED"
+            },
+            {
+                "color": "Red",
+                "price": 6800.0,
+                "sku": "AIR AQUILA-RED"
+            },
+            {
+                "color": "Green",
+                "price": 6800.0,
+                "sku": "AIR AQUILA-RED"
+            }
+        ],
+        "capacity": {
+            "camping": 12,
+            "glamping": null
+        },
+        "dimensions": "W: 13.4 ft (161\") x L: 12.5 ft (150\") x H: 10.1 ft (122\")",
+        "floor_space": "166.8 sq ft",
+        "internal_area": "107.6 sq ft",
+        "weight": "209 lb",
+        "doors": 2,
+        "windows": 6,
+        "inflation_time": "10 Minutes",
+        "material_details": [
+            "Glamping  Capacity: : 10 Persons",
+            "Carrying Case: W: 31.5\" x L: 43\" x H: 31.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "18 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/18-fixing-stakes/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "14 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/14-fixing-stakess/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "4 Pieces Orange Tension Lanyard (Reflective)",
+        "url": "https://sonmezoutdoor.us/product/4-pieces-orange-tension-lanyard-reflective/",
+        "colors": [
+            {
+                "color": "Orange",
+                "price": 10.0,
+                "sku": "4 Pieces Orange Tension Lanyard"
+            },
+            {
+                "color": "Yellow",
+                "price": 10.0,
+                "sku": "4 Pieces Orange Tension Lanyard"
+            },
+            {
+                "color": "Red",
+                "price": 10.0,
+                "sku": "4 Pieces Orange Tension Lanyard"
+            },
+            {
+                "color": "Green",
+                "price": 10.0,
+                "sku": "4 Pieces Orange Tension Lanyard"
+            }
+        ],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "2 Pieces Orange Tension Lanyard (Reflective)",
+        "url": "https://sonmezoutdoor.us/product/2-pieces-orange-tension-lanyard-reflective/",
+        "colors": [
+            {
+                "color": "Orange",
+                "price": 5.0,
+                "sku": "2 Pieces Orange Tension Lanyard"
+            },
+            {
+                "color": "Yellow",
+                "price": 5.0,
+                "sku": "2 Pieces Orange Tension Lanyard"
+            },
+            {
+                "color": "Red",
+                "price": 5.0,
+                "sku": "2 Pieces Orange Tension Lanyard"
+            },
+            {
+                "color": "Green",
+                "price": 5.0,
+                "sku": "2 Pieces Orange Tension Lanyard"
+            }
+        ],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "Tent Bag (240×170)",
+        "url": "https://sonmezoutdoor.us/product/tent-bag/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "20 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/20-fixing-stakes/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "8 Fixing Stakes",
+        "url": "https://sonmezoutdoor.us/product/8-fixing-stakess/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "Inflation Valve",
+        "url": "https://sonmezoutdoor.us/product/inflation-valve/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "2  Pieces Yellow Tension Lanyard (Reflective)",
+        "url": "https://sonmezoutdoor.us/product/2yellow-tension-lanyard-reflective/",
+        "colors": [
+            {
+                "color": "Orange",
+                "price": 5.0,
+                "sku": "2 Yellow Tension Lanyard"
+            },
+            {
+                "color": "Yellow",
+                "price": 5.0,
+                "sku": "2 Yellow Tension Lanyard"
+            },
+            {
+                "color": "Red",
+                "price": 5.0,
+                "sku": "2 Yellow Tension Lanyard"
+            },
+            {
+                "color": "Green",
+                "price": 5.0,
+                "sku": "2 Yellow Tension Lanyard"
+            }
+        ],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "SÖNMEZ MINI AIR BUNGALOW",
+        "url": "https://sonmezoutdoor.us/product/sonmez-mini-air-bungalow/",
+        "colors": [
+            {
+                "color": "Desert Camo",
+                "price": 5965.0,
+                "sku": "AIR-BUNGALOW-2"
+            },
+            {
+                "color": "Orange",
+                "price": 5435.0,
+                "sku": "AIR-BUNGALOW-2"
+            },
+            {
+                "color": "Yellow",
+                "price": 5435.0,
+                "sku": "AIR-BUNGALOW-2"
+            },
+            {
+                "color": "Desert Color",
+                "price": 5435.0,
+                "sku": "AIR-BUNGALOW-2"
+            },
+            {
+                "color": "Grey",
+                "price": 5435.0,
+                "sku": "AIR-BUNGALOW-2"
+            },
+            {
+                "color": "Red",
+                "price": 5435.0,
+                "sku": "AIR-BUNGALOW-2"
+            },
+            {
+                "color": "Green",
+                "price": 5435.0,
+                "sku": "AIR-BUNGALOW-2"
+            }
+        ],
+        "capacity": {
+            "camping": 8,
+            "glamping": 8
+        },
+        "dimensions": "W: 14.1 ft (170\") x L: 10.5 ft (126\") x H: 10.5 ft (126\")",
+        "floor_space": "147.4 sq ft",
+        "internal_area": "107.6 sq ft",
+        "weight": "143.3 lb",
+        "doors": 1,
+        "windows": 9,
+        "inflation_time": "10 Minutes",
+        "material_details": [
+            "Carrying Case: W: 19.7\" x L: 41.3\" x H: 29.5\"",
+            "Fabric: First Class Waterproof 100% Polyester Fabric (DIN EN ISO 2076)",
+            "Inflatable Columns: BOAT PVC for Best Performance (EN ISO 2286-2)",
+            "Tent Floor: Waterproof 100%, Fireproof And Anti-Bacterial PVC",
+            "Cold Resistance: -40 °F (EN 1876-1)",
+            "High Temperature: +158 °F PA 07.04 (intern)",
+            "Coating Type: One Side Acrylic Coating",
+            "Sun Protection Factor: 80 (UV standard 801)",
+            "Wind Resistance: 50 mph Durable",
+            "Our Factory: With over 20 years of expertise, our factory specializes in the professional research, development, and production of inflatable tent products.",
+            "Factory History: From 2002",
+            "Patented Designs: All our designs are patented and belong to Sönmez Outdoor.",
+            "Trademark: Sönmez Outdoor",
+            "Global Reach: We export our products to over 190 countries worldwide, ensuring global availability",
+            "Advanced Technology: Our factory is equipped with state-of-the-art machinery and technology to ensure the highest quality products."
+        ],
+        "manufacturing_country": "Türkiye 🇹🇷",
+        "included_accessories": [
+            "Carry Bag",
+            "Metal Tent Pegs",
+            "Reflective Guylines",
+            "Repair Kit",
+            "User Manual",
+            "Floor Mat",
+            "Fireproof Stove Mat",
+            "Digital Air Pump"
+        ],
+        "key_features": [],
+        "benefits": [
+            "USABLE IN ALL SEASONS",
+            "EASE OF INSTALLATION",
+            "AUXILIARY EQUIPMENT",
+            "WIND RESISTANCE",
+            "WATERPROOF",
+            "REPAIR"
+        ]
+    },
+    {
+        "name": "2 Pieces Green Tension Lanyard (Reflective)",
+        "url": "https://sonmezoutdoor.us/product/2pieces-green-tension-lanyard-reflective/",
+        "colors": [
+            {
+                "color": "Orange",
+                "price": 5.0,
+                "sku": "2 Pieces Green Tension Lanyard"
+            },
+            {
+                "color": "Yellow",
+                "price": 5.0,
+                "sku": "2 Pieces Green Tension Lanyard"
+            },
+            {
+                "color": "Red",
+                "price": 5.0,
+                "sku": "2 Pieces Green Tension Lanyard"
+            },
+            {
+                "color": "Green",
+                "price": 5.0,
+                "sku": "2 Pieces Green Tension Lanyard"
+            }
+        ],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "2 Pieces Red Tension Lanyard (Reflective)",
+        "url": "https://sonmezoutdoor.us/product/2pieces-red-tension-lanyard-reflective/",
+        "colors": [
+            {
+                "color": "Orange",
+                "price": 5.0,
+                "sku": "2 Pieces Red Tension Lanyard"
+            },
+            {
+                "color": "Yellow",
+                "price": 5.0,
+                "sku": "2 Pieces Red Tension Lanyard"
+            },
+            {
+                "color": "Red",
+                "price": 5.0,
+                "sku": "2 Pieces Red Tension Lanyard"
+            },
+            {
+                "color": "Green",
+                "price": 5.0,
+                "sku": "2 Pieces Red Tension Lanyard"
+            }
+        ],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    },
+    {
+        "name": "Tent Canopy Pole",
+        "url": "https://sonmezoutdoor.us/product/tent-canopy-pole/",
+        "colors": [],
+        "capacity": {
+            "camping": null,
+            "glamping": null
+        },
+        "dimensions": null,
+        "floor_space": null,
+        "internal_area": null,
+        "weight": null,
+        "doors": null,
+        "windows": null,
+        "inflation_time": null,
+        "material_details": [],
+        "manufacturing_country": null,
+        "included_accessories": [],
+        "key_features": [],
+        "benefits": []
+    }
+]

@@ -1,0 +1,1180 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - merhaba
+    - selam
+    - günaydın
+    - iyi akşamlar
+- intent: goodbye
+  examples: |
+    - goodbye
+    - see you
+    - talk to you later
+    - hoşça kal
+    - görüşürüz
+    - teşekkürler
+    - sağ olun
+- intent: general_question
+  examples: |
+    - What is Sönmez Outdoor and what do you specialize in?
+    - How many years of experience does your company have?
+    - Where are Sönmez tents manufactured?
+    - Do you export tents internationally?
+    - What makes your brand different from other tent companies?
+    - What industries do you serve apart from camping?
+    - Where is your company based and how can I contact you?
+    - What materials are used in your tents?
+    - Are your tents waterproof and UV-resistant?
+    - Do your tents work well in snow and heavy rain?
+    - How durable are your tents over time?
+    - Can one person set up the tent alone?
+    - Do your tents come with a user manual or guide?
+    - How compact is the tent when packed?
+    - Do you sell tents in different sizes for couples or families?
+    - Can your tents be used for glamping?
+    - Are your tents suitable for beginners or only experienced campers?
+    - Do your tents come pre-tested before shipping?
+    - How are your tents different from traditional pole tents?
+    - Are there ventilation systems built into your tents?
+    - Is there a difference in price between color options?
+    - Do you offer sales or discounts during the year?
+    - Are prices the same for international customers?
+    - What payment methods do you accept?
+    - Can I pay with PayPal or Apple Pay?
+    - Do you offer financing or installment plans?
+    - Do your prices include taxes and shipping fees?
+    - How do I get a formal quote for a large order?
+    - Can I reserve a tent now and pay later?
+    - Are there hidden fees I should know about when purchasing?
+    - Can I get a tax-exempt quote for business use?
+    - Do you offer pricing in different currencies like EUR or USD?
+    - How long does shipping take to the United States?
+    - Do you offer free shipping within Türkiye?
+    - Can I choose the courier service when ordering?
+    - Is international shipping available?
+    - Do you provide tracking information for orders?
+    - How is the tent packaged for delivery?
+    - What should I do if my package is delayed or lost?
+    - Do you ship to PO boxes or military addresses?
+    - Is there express or same-day delivery available?
+    - Can I schedule a delivery time or date?
+    - What countries do you not ship to?
+    - Is weekend delivery available?
+    - What happens if I miss the delivery attempt?
+    - Which accessories are included with each tent?
+    - Can I buy spare pegs and guylines?
+    - Do you sell tent bags separately?
+    - What types of floor mats do you offer?
+    - Are your stove mats fireproof and reusable?
+    - Do accessories vary by tent model?
+    - Can I get a bundle of accessories at a discount?
+    - Do you offer organizers or internal storage systems?
+    - Can accessories be shipped alone without a tent?
+    - Are your pumps manual or electric?
+    - Can I order color-matched accessories?
+    - Do you sell accessory bundles for specific tent sizes?
+    - What are the most recommended accessories for winter camping?
+    - What’s the best way to dry the tent after camping?
+    - Can I fold the tent and store it while it’s slightly damp?
+    - What should I do if the tent gets punctured?
+    - Do you provide repair kits or patches?
+    - How should I store my tent for the winter?
+    - Is maintenance required after each use?
+    - What should I do if mold starts to grow on the tent fabric?
+    - Are there videos available for setup and maintenance?
+    - Are your tents compatible with diesel heaters?
+    - Can I connect two tents together?
+    - Do all tents support internal partitions or dividers?
+    - Are accessories from other brands compatible with your tents?
+    - Can I customize the color of my tent?
+    - Do you offer modular tent setups?
+    - Are your tents compatible with wood stoves from other brands?
+    - How can I contact customer service?
+    - Can I speak with a sales representative before placing an order?
+    - How quickly do you respond to support emails?
+    - Is there a live chat or WhatsApp support available?
+    - Can I get help choosing the best tent for my needs?
+    - Do you offer priority support for professional clients?
+    - Is there a loyalty or referral program for returning customers?
+- intent: tent_info_query
+  examples: |
+    - What is the price of the LONDON PRESTIGE (S)?
+    - How much does the LONDON PRESTIGE (S) weigh?
+    - How long does it take to inflate the LONDON PRESTIGE (S)?
+    - What is the capacity of the LONDON PRESTIGE (S)?
+    - What are the color options for LONDON PRESTIGE (S)?
+    - What are the dimensions of the LONDON PRESTIGE (S)?
+    - How many windows and doors does the LONDON PRESTIGE (S) have?
+    - What accessories come with the LONDON PRESTIGE (S)?
+    - What is the internal area of the LONDON PRESTIGE (S)?
+    - Does the LONDON PRESTIGE (S) have the feature: transparent sunroof & panoramic windows?
+    - Does the LONDON PRESTIGE (S) have the feature: fireproof stove jack (ø11 cm)?
+    - Does the LONDON PRESTIGE (S) have the feature: uv resistant (upf 80), antimicrobial, fully waterproof?
+    - Does the LONDON PRESTIGE (S) have the feature: snmz™ 9-point wind tensioning?
+    - Does the LONDON PRESTIGE (S) have the feature: airsnmz™ ventilation system?
+    - Does the LONDON PRESTIGE (S) have the feature: electric hook-up & lantern points?
+    - Does the LONDON PRESTIGE (S) have the feature: double zip door, extra rain cover, privacy curtains?
+    - Does the LONDON PRESTIGE (S) have the feature: smart valve system (touch deflate)?
+    - Does the LONDON PRESTIGE (S) have the feature: durable pe groundsheet?
+    - What is the price of the AIR BUSHCRAFT PREMIUM?
+    - How much does the AIR BUSHCRAFT PREMIUM weigh?
+    - How long does it take to inflate the AIR BUSHCRAFT PREMIUM?
+    - What is the capacity of the AIR BUSHCRAFT PREMIUM?
+    - What are the color options for AIR BUSHCRAFT PREMIUM?
+    - What are the dimensions of the AIR BUSHCRAFT PREMIUM?
+    - How many windows and doors does the AIR BUSHCRAFT PREMIUM have?
+    - What accessories come with the AIR BUSHCRAFT PREMIUM?
+    - What is the internal area of the AIR BUSHCRAFT PREMIUM?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: same as london prestige (s), but smaller and faster to inflate?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: patented design?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: uv and flame resistance?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: snmz™ structure?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: all-weather and stove compatible?
+    - What is the price of the LONDON 360 DISCOVER (M)?
+    - How much does the LONDON 360 DISCOVER (M) weigh?
+    - How long does it take to inflate the LONDON 360 DISCOVER (M)?
+    - What is the capacity of the LONDON 360 DISCOVER (M)?
+    - What are the color options for LONDON 360 DISCOVER (M)?
+    - What are the dimensions of the LONDON 360 DISCOVER (M)?
+    - How many windows and doors does the LONDON 360 DISCOVER (M) have?
+    - What accessories come with the LONDON 360 DISCOVER (M)?
+    - What is the internal area of the LONDON 360 DISCOVER (M)?
+    - Does the LONDON 360 DISCOVER (M) have the feature: full glamping design with 360° sunroof?
+    - Does the LONDON 360 DISCOVER (M) have the feature: patented panoramic window system?
+    - Does the LONDON 360 DISCOVER (M) have the feature: stove-compatible, smart valve deflation?
+    - Does the LONDON 360 DISCOVER (M) have the feature: tested to withstand 9 bft (80 km/h) winds?
+    - Does the LONDON 360 DISCOVER (M) have the feature: fully taped seams, antimicrobial fabric?
+    - Does the LONDON 360 DISCOVER (M) have the feature: snmz™ support system and airsnmz™ panel?
+    - Does the LONDON 360 DISCOVER (M) have the feature: electric lighting setup, privacy curtains, mosquito netting?
+    - What is the price of the LONDON PRESTIGE (M)?
+    - How much does the LONDON PRESTIGE (M) weigh?
+    - How long does it take to inflate the LONDON PRESTIGE (M)?
+    - What is the capacity of the LONDON PRESTIGE (M)?
+    - What are the color options for LONDON PRESTIGE (M)?
+    - What are the dimensions of the LONDON PRESTIGE (M)?
+    - How many windows and doors does the LONDON PRESTIGE (M) have?
+    - What accessories come with the LONDON PRESTIGE (M)?
+    - What is the internal area of the LONDON PRESTIGE (M)?
+    - Does the LONDON PRESTIGE (M) have the feature: same as discover (m), but slightly lighter and more compact?
+    - Does the LONDON PRESTIGE (M) have the feature: 4-season use, luxury glamping setup?
+    - Does the LONDON PRESTIGE (M) have the feature: stove compatibility and panoramic ventilation?
+    - What is the price of the AERO CABIN?
+    - How much does the AERO CABIN weigh?
+    - How long does it take to inflate the AERO CABIN?
+    - What is the capacity of the AERO CABIN?
+    - What are the color options for AERO CABIN?
+    - What are the dimensions of the AERO CABIN?
+    - How many windows and doors does the AERO CABIN have?
+    - What accessories come with the AERO CABIN?
+    - What is the internal area of the AERO CABIN?
+    - Does the AERO CABIN have the feature: spacious and ergonomic design?
+    - Does the AERO CABIN have the feature: fireproof and antibacterial pvc flooring?
+    - Does the AERO CABIN have the feature: rated to -40 °f and +158 °f?
+    - Does the AERO CABIN have the feature: wind resistant up to 80 km/h?
+    - Does the AERO CABIN have the feature: smart valve and snmz™ structure?
+    - Does the AERO CABIN have the feature: fully waterproof, panoramic windows?
+    - What is the price of the SÖNMEZ AIR BUNGALOW?
+    - How much does the SÖNMEZ AIR BUNGALOW weigh?
+    - How long does it take to inflate the SÖNMEZ AIR BUNGALOW?
+    - What is the capacity of the SÖNMEZ AIR BUNGALOW?
+    - What are the color options for SÖNMEZ AIR BUNGALOW?
+    - What are the dimensions of the SÖNMEZ AIR BUNGALOW?
+    - How many windows and doors does the SÖNMEZ AIR BUNGALOW have?
+    - What accessories come with the SÖNMEZ AIR BUNGALOW?
+    - What is the internal area of the SÖNMEZ AIR BUNGALOW?
+    - Does the SÖNMEZ AIR BUNGALOW have the feature: patented design with high weather resistance?
+    - Does the SÖNMEZ AIR BUNGALOW have the feature: strong wind tolerance (80 km/h)?
+    - Does the SÖNMEZ AIR BUNGALOW have the feature: large living space with ergonomic layout?
+    - Does the SÖNMEZ AIR BUNGALOW have the feature: quick 10-minute setup?
+    - What is the price of the AIR CAPSULE XXL?
+    - How much does the AIR CAPSULE XXL weigh?
+    - How long does it take to inflate the AIR CAPSULE XXL?
+    - What is the capacity of the AIR CAPSULE XXL?
+    - What are the color options for AIR CAPSULE XXL?
+    - What are the dimensions of the AIR CAPSULE XXL?
+    - How many windows and doors does the AIR CAPSULE XXL have?
+    - What accessories come with the AIR CAPSULE XXL?
+    - What is the internal area of the AIR CAPSULE XXL?
+    - Does the AIR CAPSULE XXL have the feature: panoramic windows?
+    - Does the AIR CAPSULE XXL have the feature: antimicrobial and uv-resistant fabric?
+    - Does the AIR CAPSULE XXL have the feature: smart valve and airsnmz™ panel?
+    - Does the AIR CAPSULE XXL have the feature: durable boat pvc columns and snmz™ tension system?
+    - Does the AIR CAPSULE XXL have the feature: interior suitable for furniture and communal use?
+    - What is the price of the AIR AQUILA?
+    - How much does the AIR AQUILA weigh?
+    - How long does it take to inflate the AIR AQUILA?
+    - What is the capacity of the AIR AQUILA?
+    - What are the color options for AIR AQUILA?
+    - What are the dimensions of the AIR AQUILA?
+    - How many windows and doors does the AIR AQUILA have?
+    - What accessories come with the AIR AQUILA?
+    - What is the internal area of the AIR AQUILA?
+    - Does the AIR AQUILA have the feature: patented design for 4-season conditions?
+    - Does the AIR AQUILA have the feature: high weather resistance and waterproofing?
+    - Does the AIR AQUILA have the feature: ergonomic design with panoramic windows?
+    - Does the AIR AQUILA have the feature: quick setup with smart valve system?
+    - What is the price of the SÖNMEZ MINI AIR BUNGALOW?
+    - How much does the SÖNMEZ MINI AIR BUNGALOW weigh?
+    - How long does it take to inflate the SÖNMEZ MINI AIR BUNGALOW?
+    - What is the capacity of the SÖNMEZ MINI AIR BUNGALOW?
+    - What are the color options for SÖNMEZ MINI AIR BUNGALOW?
+    - What are the dimensions of the SÖNMEZ MINI AIR BUNGALOW?
+    - How many windows and doors does the SÖNMEZ MINI AIR BUNGALOW have?
+    - What accessories come with the SÖNMEZ MINI AIR BUNGALOW?
+    - What is the internal area of the SÖNMEZ MINI AIR BUNGALOW?
+    - Does the SÖNMEZ MINI AIR BUNGALOW have the feature: compact yet spacious for 8-person glamping?
+    - Does the SÖNMEZ MINI AIR BUNGALOW have the feature: fully waterproof and weather-resistant?
+    - Does the SÖNMEZ MINI AIR BUNGALOW have the feature: fast setup with durable structure?
+    - What is the price of the LONDON 360 DISCOVER?
+    - How much does the LONDON 360 DISCOVER weigh?
+    - How long does it take to inflate the LONDON 360 DISCOVER?
+    - What is the capacity of the LONDON 360 DISCOVER?
+    - What are the color options for LONDON 360 DISCOVER?
+    - What are the dimensions of the LONDON 360 DISCOVER?
+    - How many windows and doors does the LONDON 360 DISCOVER have?
+    - What accessories come with the LONDON 360 DISCOVER?
+    - What is the internal area of the LONDON 360 DISCOVER?
+    - Does the LONDON 360 DISCOVER have the feature: 360º panoramic view and transparent sunroof?
+    - Does the LONDON 360 DISCOVER have the feature: stove-compatible with chimney outlet?
+    - Does the LONDON 360 DISCOVER have the feature: spacious design, ideal for long vacations?
+    - What is the price of the LONDON 360?
+    - How much does the LONDON 360 weigh?
+    - How long does it take to inflate the LONDON 360?
+    - What is the capacity of the LONDON 360?
+    - What are the color options for LONDON 360?
+    - What are the dimensions of the LONDON 360?
+    - How many windows and doors does the LONDON 360 have?
+    - What accessories come with the LONDON 360?
+    - What is the internal area of the LONDON 360?
+    - Does the LONDON 360 have the feature: panoramic windows with transparent roof?
+    - Does the LONDON 360 have the feature: camping stove ready?
+    - Does the LONDON 360 have the feature: quick setup, premium glamping model?
+    - What is the price of the LONDON FAMILY?
+    - How much does the LONDON FAMILY weigh?
+    - How long does it take to inflate the LONDON FAMILY?
+    - What is the capacity of the LONDON FAMILY?
+    - What are the color options for LONDON FAMILY?
+    - What are the dimensions of the LONDON FAMILY?
+    - How many windows and doors does the LONDON FAMILY have?
+    - What accessories come with the LONDON FAMILY?
+    - What is the internal area of the LONDON FAMILY?
+    - Does the LONDON FAMILY have the feature: durable and compact family glamping tent?
+    - Does the LONDON FAMILY have the feature: 4-season weather resistance?
+    - Does the LONDON FAMILY have the feature: quick inflation and easy storage?
+    - What is the price of the LONDON FAMILY LIMITED EDITION?
+    - How much does the LONDON FAMILY LIMITED EDITION weigh?
+    - How long does it take to inflate the LONDON FAMILY LIMITED EDITION?
+    - What is the capacity of the LONDON FAMILY LIMITED EDITION?
+    - What are the color options for LONDON FAMILY LIMITED EDITION?
+    - What are the dimensions of the LONDON FAMILY LIMITED EDITION?
+    - How many windows and doors does the LONDON FAMILY LIMITED EDITION have?
+    - What accessories come with the LONDON FAMILY LIMITED EDITION?
+    - What is the internal area of the LONDON FAMILY LIMITED EDITION?
+    - Does the LONDON FAMILY LIMITED EDITION have the feature: affordable limited edition glamping tent?
+    - Does the LONDON FAMILY LIMITED EDITION have the feature: all-weather protection?
+    - Does the LONDON FAMILY LIMITED EDITION have the feature: compatible with stove and accessories?
+    - What is the price of the LONDON MAXIA 480?
+    - How much does the LONDON MAXIA 480 weigh?
+    - How long does it take to inflate the LONDON MAXIA 480?
+    - What is the capacity of the LONDON MAXIA 480?
+    - What are the color options for LONDON MAXIA 480?
+    - What are the dimensions of the LONDON MAXIA 480?
+    - How many windows and doors does the LONDON MAXIA 480 have?
+    - What accessories come with the LONDON MAXIA 480?
+    - What is the internal area of the LONDON MAXIA 480?
+    - Does the LONDON MAXIA 480 have the feature: panoramic windows and transparent sunroof?
+    - Does the LONDON MAXIA 480 have the feature: designed for extended glamping with large groups?
+    - Does the LONDON MAXIA 480 have the feature: heat-resistant chimney outlet for stove use?
+    - Does the LONDON MAXIA 480 have the feature: 4-season use, 9 bft wind resistance?
+    - Does the LONDON MAXIA 480 have the feature: smart valve, snmz™ tensioning, fireproof mat included?
+    - What is the price of the SÖNMEZ FLOATING TENT?
+    - How much does the SÖNMEZ FLOATING TENT weigh?
+    - How long does it take to inflate the SÖNMEZ FLOATING TENT?
+    - What is the capacity of the SÖNMEZ FLOATING TENT?
+    - What are the color options for SÖNMEZ FLOATING TENT?
+    - What are the dimensions of the SÖNMEZ FLOATING TENT?
+    - How many windows and doors does the SÖNMEZ FLOATING TENT have?
+    - What accessories come with the SÖNMEZ FLOATING TENT?
+    - What is the internal area of the SÖNMEZ FLOATING TENT?
+    - Does the SÖNMEZ FLOATING TENT have the feature: floats on water and usable on land?
+    - Does the SÖNMEZ FLOATING TENT have the feature: first of its kind inflatable floating tent?
+    - Does the SÖNMEZ FLOATING TENT have the feature: 100% waterproof, uv-protected, antimicrobial?
+    - Does the SÖNMEZ FLOATING TENT have the feature: compact for 4 people with 360° outdoor experience?
+    - Does the SÖNMEZ FLOATING TENT have the feature: ideal for lakes, streams, or rivers?
+    - Does the SÖNMEZ FLOATING TENT have the feature: wind resistant up to 9 bft (80 km/h)?
+- intent: order_accessory
+  examples: |
+    - I want to order a Floor Mat (500×380)
+    - Can I buy the Floor Mat (500×380)?
+    - Do you sell Floor Mat (500×380)?
+    - I'd like to purchase Floor Mat (500×380)
+    - Please add Floor Mat (500×380) to my order
+    - I want to order a Floor Mat (490×370)
+    - Can I buy the Floor Mat (490×370)?
+    - Do you sell Floor Mat (490×370)?
+    - I'd like to purchase Floor Mat (490×370)
+    - Please add Floor Mat (490×370) to my order
+    - I want to order a Tent Bag (290×210)
+    - Can I buy the Tent Bag (290×210)?
+    - Do you sell Tent Bag (290×210)?
+    - I'd like to purchase Tent Bag (290×210)
+    - Please add Tent Bag (290×210) to my order
+    - I want to order a Floor Mat (360×360)
+    - Can I buy the Floor Mat (360×360)?
+    - Do you sell Floor Mat (360×360)?
+    - I'd like to purchase Floor Mat (360×360)
+    - Please add Floor Mat (360×360) to my order
+    - I want to order a Floor Mat (420×320)
+    - Can I buy the Floor Mat (420×320)?
+    - Do you sell Floor Mat (420×320)?
+    - I'd like to purchase Floor Mat (420×320)
+    - Please add Floor Mat (420×320) to my order
+    - I want to order a Hand Pump
+    - Can I buy the Hand Pump?
+    - Do you sell Hand Pump?
+    - I'd like to purchase Hand Pump
+    - Please add Hand Pump to my order
+    - I want to order a Floor Mat (340×340)
+    - Can I buy the Floor Mat (340×340)?
+    - Do you sell Floor Mat (340×340)?
+    - I'd like to purchase Floor Mat (340×340)
+    - Please add Floor Mat (340×340) to my order
+    - I want to order a Tent Bag (240×170)
+    - Can I buy the Tent Bag (240×170)?
+    - Do you sell Tent Bag (240×170)?
+    - I'd like to purchase Tent Bag (240×170)
+    - Please add Tent Bag (240×170) to my order
+    - I want to order a Floor Mat (315×315)
+    - Can I buy the Floor Mat (315×315)?
+    - Do you sell Floor Mat (315×315)?
+    - I'd like to purchase Floor Mat (315×315)
+    - Please add Floor Mat (315×315) to my order
+    - I want to order a Floor Mat (310×280)
+    - Can I buy the Floor Mat (310×280)?
+    - Do you sell Floor Mat (310×280)?
+    - I'd like to purchase Floor Mat (310×280)
+    - Please add Floor Mat (310×280) to my order
+    - I want to order a Floor Mat (290×280)
+    - Can I buy the Floor Mat (290×280)?
+    - Do you sell Floor Mat (290×280)?
+    - I'd like to purchase Floor Mat (290×280)
+    - Please add Floor Mat (290×280) to my order
+    - I want to order a Floor Mat (250×250)
+    - Can I buy the Floor Mat (250×250)?
+    - Do you sell Floor Mat (250×250)?
+    - I'd like to purchase Floor Mat (250×250)
+    - Please add Floor Mat (250×250) to my order
+    - I want to order a Floor Mat (240×240)
+    - Can I buy the Floor Mat (240×240)?
+    - Do you sell Floor Mat (240×240)?
+    - I'd like to purchase Floor Mat (240×240)
+    - Please add Floor Mat (240×240) to my order
+    - I want to order a 20 Fixing Stakes
+    - Can I buy the 20 Fixing Stakes?
+    - Do you sell 20 Fixing Stakes?
+    - I'd like to purchase 20 Fixing Stakes
+    - Please add 20 Fixing Stakes to my order
+    - I want to order a 18 Fixing Stakes
+    - Can I buy the 18 Fixing Stakes?
+    - Do you sell 18 Fixing Stakes?
+    - I'd like to purchase 18 Fixing Stakes
+    - Please add 18 Fixing Stakes to my order
+    - I want to order a 16 Fixing Stakes
+    - Can I buy the 16 Fixing Stakes?
+    - Do you sell 16 Fixing Stakes?
+    - I'd like to purchase 16 Fixing Stakes
+    - Please add 16 Fixing Stakes to my order
+    - I want to order a 14 Fixing Stakes
+    - Can I buy the 14 Fixing Stakes?
+    - Do you sell 14 Fixing Stakes?
+    - I'd like to purchase 14 Fixing Stakes
+    - Please add 14 Fixing Stakes to my order
+    - I want to order a Tent Canopy Pole
+    - Can I buy the Tent Canopy Pole?
+    - Do you sell Tent Canopy Pole?
+    - I'd like to purchase Tent Canopy Pole
+    - Please add Tent Canopy Pole to my order
+    - I want to order a 12 Fixing Stakes
+    - Can I buy the 12 Fixing Stakes?
+    - Do you sell 12 Fixing Stakes?
+    - I'd like to purchase 12 Fixing Stakes
+    - Please add 12 Fixing Stakes to my order
+    - I want to order a 10 Fixing Stakes
+    - Can I buy the 10 Fixing Stakes?
+    - Do you sell 10 Fixing Stakes?
+    - I'd like to purchase 10 Fixing Stakes
+    - Please add 10 Fixing Stakes to my order
+    - I want to order a 8 Fixing Stakes
+    - Can I buy the 8 Fixing Stakes?
+    - Do you sell 8 Fixing Stakes?
+    - I'd like to purchase 8 Fixing Stakes
+    - Please add 8 Fixing Stakes to my order
+    - I want to order a Inflation Valve
+    - Can I buy the Inflation Valve?
+    - Do you sell Inflation Valve?
+    - I'd like to purchase Inflation Valve
+    - Please add Inflation Valve to my order
+    - I want to order a 6 Fixing Stakes
+    - Can I buy the 6 Fixing Stakes?
+    - Do you sell 6 Fixing Stakes?
+    - I'd like to purchase 6 Fixing Stakes
+    - Please add 6 Fixing Stakes to my order
+    - I want to order a 4 Fixing Stakes
+    - Can I buy the 4 Fixing Stakes?
+    - Do you sell 4 Fixing Stakes?
+    - I'd like to purchase 4 Fixing Stakes
+    - Please add 4 Fixing Stakes to my order
+    - I want to order a 4 Pieces Yellow Tension Lanyard (Reflective)
+    - Can I buy the 4 Pieces Yellow Tension Lanyard (Reflective)?
+    - Do you sell 4 Pieces Yellow Tension Lanyard (Reflective)?
+    - I'd like to purchase 4 Pieces Yellow Tension Lanyard (Reflective)
+    - Please add 4 Pieces Yellow Tension Lanyard (Reflective) to my order
+    - I want to order a 4 Pieces Red Tension Lanyard (Reflective)
+    - Can I buy the 4 Pieces Red Tension Lanyard (Reflective)?
+    - Do you sell 4 Pieces Red Tension Lanyard (Reflective)?
+    - I'd like to purchase 4 Pieces Red Tension Lanyard (Reflective)
+    - Please add 4 Pieces Red Tension Lanyard (Reflective) to my order
+    - I want to order a 4 Pieces Green Tension Lanyard (Reflective)
+    - Can I buy the 4 Pieces Green Tension Lanyard (Reflective)?
+    - Do you sell 4 Pieces Green Tension Lanyard (Reflective)?
+    - I'd like to purchase 4 Pieces Green Tension Lanyard (Reflective)
+    - Please add 4 Pieces Green Tension Lanyard (Reflective) to my order
+    - I want to order a 4 Pieces Orange Tension Lanyard (Reflective)
+    - Can I buy the 4 Pieces Orange Tension Lanyard (Reflective)?
+    - Do you sell 4 Pieces Orange Tension Lanyard (Reflective)?
+    - I'd like to purchase 4 Pieces Orange Tension Lanyard (Reflective)
+    - Please add 4 Pieces Orange Tension Lanyard (Reflective) to my order
+    - I want to order a 2 Pieces Orange Tension Lanyard (Reflective)
+    - Can I buy the 2 Pieces Orange Tension Lanyard (Reflective)?
+    - Do you sell 2 Pieces Orange Tension Lanyard (Reflective)?
+    - I'd like to purchase 2 Pieces Orange Tension Lanyard (Reflective)
+    - Please add 2 Pieces Orange Tension Lanyard (Reflective) to my order
+    - I want to order a 2 Pieces Red Tension Lanyard (Reflective)
+    - Can I buy the 2 Pieces Red Tension Lanyard (Reflective)?
+    - Do you sell 2 Pieces Red Tension Lanyard (Reflective)?
+    - I'd like to purchase 2 Pieces Red Tension Lanyard (Reflective)
+    - Please add 2 Pieces Red Tension Lanyard (Reflective) to my order
+    - I want to order a 2 Pieces Green Tension Lanyard (Reflective)
+    - Can I buy the 2 Pieces Green Tension Lanyard (Reflective)?
+    - Do you sell 2 Pieces Green Tension Lanyard (Reflective)?
+    - I'd like to purchase 2 Pieces Green Tension Lanyard (Reflective)
+    - Please add 2 Pieces Green Tension Lanyard (Reflective) to my order
+    - I want to order a 2 Pieces Yellow Tension Lanyard (Reflective)
+    - Can I buy the 2 Pieces Yellow Tension Lanyard (Reflective)?
+    - Do you sell 2 Pieces Yellow Tension Lanyard (Reflective)?
+    - I'd like to purchase 2 Pieces Yellow Tension Lanyard (Reflective)
+    - Please add 2 Pieces Yellow Tension Lanyard (Reflective) to my order
+    - I want to order a Winnerwell Fire Guard Stove Table
+    - Can I buy the Winnerwell Fire Guard Stove Table?
+    - Do you sell Winnerwell Fire Guard Stove Table?
+    - I'd like to purchase Winnerwell Fire Guard Stove Table
+    - Please add Winnerwell Fire Guard Stove Table to my order
+    - I want to order a Winnerwell Nomad View 1G Large Full Package
+    - Can I buy the Winnerwell Nomad View 1G Large Full Package?
+    - Do you sell Winnerwell Nomad View 1G Large Full Package?
+    - I'd like to purchase Winnerwell Nomad View 1G Large Full Package
+    - Please add Winnerwell Nomad View 1G Large Full Package to my order
+    - I want to order a Winnerwell Woodlander L Pizza Oven
+    - Can I buy the Winnerwell Woodlander L Pizza Oven?
+    - Do you sell Winnerwell Woodlander L Pizza Oven?
+    - I'd like to purchase Winnerwell Woodlander L Pizza Oven
+    - Please add Winnerwell Woodlander L Pizza Oven to my order
+    - I want to order a Winnerwell Nomad PLUS Double View Large
+    - Can I buy the Winnerwell Nomad PLUS Double View Large?
+    - Do you sell Winnerwell Nomad PLUS Double View Large?
+    - I'd like to purchase Winnerwell Nomad PLUS Double View Large
+    - Please add Winnerwell Nomad PLUS Double View Large to my order
+    - I want to order a WinnerWell Iron Stove
+    - Can I buy the WinnerWell Iron Stove?
+    - Do you sell WinnerWell Iron Stove?
+    - I'd like to purchase WinnerWell Iron Stove
+    - Please add WinnerWell Iron Stove to my order
+    - I want to order a Winnerwell Pipe Oven L
+    - Can I buy the Winnerwell Pipe Oven L?
+    - Do you sell Winnerwell Pipe Oven L?
+    - I'd like to purchase Winnerwell Pipe Oven L
+    - Please add Winnerwell Pipe Oven L to my order
+    - I want to order a Winnerwell Secondary Combustion Burner
+    - Can I buy the Winnerwell Secondary Combustion Burner?
+    - Do you sell Winnerwell Secondary Combustion Burner?
+    - I'd like to purchase Winnerwell Secondary Combustion Burner
+    - Please add Winnerwell Secondary Combustion Burner to my order
+    - I want to order a WinnerWell Secondary Combustion Portable Grill Firepit
+    - Can I buy the WinnerWell Secondary Combustion Portable Grill Firepit?
+    - Do you sell WinnerWell Secondary Combustion Portable Grill Firepit?
+    - I'd like to purchase WinnerWell Secondary Combustion Portable Grill Firepit
+    - Please add WinnerWell Secondary Combustion Portable Grill Firepit to my order
+    - I want to order a WinnerWell L-Sized Flat Firepit
+    - Can I buy the WinnerWell L-Sized Flat Firepit?
+    - Do you sell WinnerWell L-Sized Flat Firepit?
+    - I'd like to purchase WinnerWell L-Sized Flat Firepit
+    - Please add WinnerWell L-Sized Flat Firepit to my order
+    - I want to order a WinnerWell Fastfold Camp Table Charcoal BBQ Grill
+    - Can I buy the WinnerWell Fastfold Camp Table Charcoal BBQ Grill?
+    - Do you sell WinnerWell Fastfold Camp Table Charcoal BBQ Grill?
+    - I'd like to purchase WinnerWell Fastfold Camp Table Charcoal BBQ Grill
+    - Please add WinnerWell Fastfold Camp Table Charcoal BBQ Grill to my order
+    - I want to order a Winnerwell L-sized Water Tank
+    - Can I buy the Winnerwell L-sized Water Tank?
+    - Do you sell Winnerwell L-sized Water Tank?
+    - I'd like to purchase Winnerwell L-sized Water Tank
+    - Please add Winnerwell L-sized Water Tank to my order
+    - I want to order a Winnerwell M-sized Water Tank
+    - Can I buy the Winnerwell M-sized Water Tank?
+    - Do you sell Winnerwell M-sized Water Tank?
+    - I'd like to purchase Winnerwell M-sized Water Tank
+    - Please add Winnerwell M-sized Water Tank to my order
+    - I want to order a Winnerwell Table Board+Bottom Tray Titanium
+    - Can I buy the Winnerwell Table Board+Bottom Tray Titanium?
+    - Do you sell Winnerwell Table Board+Bottom Tray Titanium?
+    - I'd like to purchase Winnerwell Table Board+Bottom Tray Titanium
+    - Please add Winnerwell Table Board+Bottom Tray Titanium to my order
+    - I want to order a Winnerwell 14 Cup Stainless Percolator Coffee Pot
+    - Can I buy the Winnerwell 14 Cup Stainless Percolator Coffee Pot?
+    - Do you sell Winnerwell 14 Cup Stainless Percolator Coffee Pot?
+    - I'd like to purchase Winnerwell 14 Cup Stainless Percolator Coffee Pot
+    - Please add Winnerwell 14 Cup Stainless Percolator Coffee Pot to my order
+    - I want to order a Winnerwell 9 Cup Stainless Percolator Coffee Pot
+    - Can I buy the Winnerwell 9 Cup Stainless Percolator Coffee Pot?
+    - Do you sell Winnerwell 9 Cup Stainless Percolator Coffee Pot?
+    - I'd like to purchase Winnerwell 9 Cup Stainless Percolator Coffee Pot
+    - Please add Winnerwell 9 Cup Stainless Percolator Coffee Pot to my order
+    - I want to order a Winnerwell Woodlander L Pizza Oven Extension Legs
+    - Can I buy the Winnerwell Woodlander L Pizza Oven Extension Legs?
+    - Do you sell Winnerwell Woodlander L Pizza Oven Extension Legs?
+    - I'd like to purchase Winnerwell Woodlander L Pizza Oven Extension Legs
+    - Please add Winnerwell Woodlander L Pizza Oven Extension Legs to my order
+    - I want to order a Winnerwell Fiberglass FireProf Stove Mat
+    - Can I buy the Winnerwell Fiberglass FireProf Stove Mat?
+    - Do you sell Winnerwell Fiberglass FireProf Stove Mat?
+    - I'd like to purchase Winnerwell Fiberglass FireProf Stove Mat
+    - Please add Winnerwell Fiberglass FireProf Stove Mat to my order
+    - I want to order a Fireproof Stove Mat (150×100)
+    - Can I buy the Fireproof Stove Mat (150×100)?
+    - Do you sell Fireproof Stove Mat (150×100)?
+    - I'd like to purchase Fireproof Stove Mat (150×100)
+    - Please add Fireproof Stove Mat (150×100) to my order
+    - I want to order a Winnerwell L-sized Carrying Bag
+    - Can I buy the Winnerwell L-sized Carrying Bag?
+    - Do you sell Winnerwell L-sized Carrying Bag?
+    - I'd like to purchase Winnerwell L-sized Carrying Bag
+    - Please add Winnerwell L-sized Carrying Bag to my order
+    - I want to order a Winnerwell Glass Replacement
+    - Can I buy the Winnerwell Glass Replacement?
+    - Do you sell Winnerwell Glass Replacement?
+    - I'd like to purchase Winnerwell Glass Replacement
+    - Please add Winnerwell Glass Replacement to my order
+    - I want to order a Chimney Protector L
+    - Can I buy the Chimney Protector L?
+    - Do you sell Chimney Protector L?
+    - I'd like to purchase Chimney Protector L
+    - Please add Chimney Protector L to my order
+    - I want to order a Winnerwell 90 Degree Pipe L
+    - Can I buy the Winnerwell 90 Degree Pipe L?
+    - Do you sell Winnerwell 90 Degree Pipe L?
+    - I'd like to purchase Winnerwell 90 Degree Pipe L
+    - Please add Winnerwell 90 Degree Pipe L to my order
+    - I want to order a Winnerwell 45 Degree Pipe L
+    - Can I buy the Winnerwell 45 Degree Pipe L?
+    - Do you sell Winnerwell 45 Degree Pipe L?
+    - I'd like to purchase Winnerwell 45 Degree Pipe L
+    - Please add Winnerwell 45 Degree Pipe L to my order
+    - I want to order a Fireproof Stove Mat (100×75)
+    - Can I buy the Fireproof Stove Mat (100×75)?
+    - Do you sell Fireproof Stove Mat (100×75)?
+    - I'd like to purchase Fireproof Stove Mat (100×75)
+    - Please add Fireproof Stove Mat (100×75) to my order
+    - I want to order a Winnerwell Heat-resistant Gloves
+    - Can I buy the Winnerwell Heat-resistant Gloves?
+    - Do you sell Winnerwell Heat-resistant Gloves?
+    - I'd like to purchase Winnerwell Heat-resistant Gloves
+    - Please add Winnerwell Heat-resistant Gloves to my order
+    - I want to order a Winnerwell L-sized Pipe Brush
+    - Can I buy the Winnerwell L-sized Pipe Brush?
+    - Do you sell Winnerwell L-sized Pipe Brush?
+    - I'd like to purchase Winnerwell L-sized Pipe Brush
+    - Please add Winnerwell L-sized Pipe Brush to my order
+    - I want to order a Winnerwell 90 Degree Pipe M
+    - Can I buy the Winnerwell 90 Degree Pipe M?
+    - Do you sell Winnerwell 90 Degree Pipe M?
+    - I'd like to purchase Winnerwell 90 Degree Pipe M
+    - Please add Winnerwell 90 Degree Pipe M to my order
+    - I want to order a Winnerwell 45 Degree Pipe M
+    - Can I buy the Winnerwell 45 Degree Pipe M?
+    - Do you sell Winnerwell 45 Degree Pipe M?
+    - I'd like to purchase Winnerwell 45 Degree Pipe M
+    - Please add Winnerwell 45 Degree Pipe M to my order
+    - I want to order a Winnerwell M-sized Pipe Brush
+    - Can I buy the Winnerwell M-sized Pipe Brush?
+    - Do you sell Winnerwell M-sized Pipe Brush?
+    - I'd like to purchase Winnerwell M-sized Pipe Brush
+    - Please add Winnerwell M-sized Pipe Brush to my order
+    - I want to order a Winnerwell Extension Legs M&L & Grill Firepit
+    - Can I buy the Winnerwell Extension Legs M&L & Grill Firepit?
+    - Do you sell Winnerwell Extension Legs M&L & Grill Firepit?
+    - I'd like to purchase Winnerwell Extension Legs M&L & Grill Firepit
+    - Please add Winnerwell Extension Legs M&L & Grill Firepit to my order
+    - I want to order a Winnerwell Scrubbing Sponge
+    - Can I buy the Winnerwell Scrubbing Sponge?
+    - Do you sell Winnerwell Scrubbing Sponge?
+    - I'd like to purchase Winnerwell Scrubbing Sponge
+    - Please add Winnerwell Scrubbing Sponge to my order
+    - I want to order a Inflatable Cinevision
+    - Can I buy the Inflatable Cinevision?
+    - Do you sell Inflatable Cinevision?
+    - I'd like to purchase Inflatable Cinevision
+    - Please add Inflatable Cinevision to my order
+- intent: check_availability
+  examples: |
+    - Is Floor Mat (500×380) available?
+    - Do you have Floor Mat (500×380) in stock?
+    - Can I get Floor Mat (500×380) now?
+    - Is the Floor Mat (500×380) sold out?
+    - Is Floor Mat (490×370) available?
+    - Do you have Floor Mat (490×370) in stock?
+    - Can I get Floor Mat (490×370) now?
+    - Is the Floor Mat (490×370) sold out?
+    - Is Tent Bag (290×210) available?
+    - Do you have Tent Bag (290×210) in stock?
+    - Can I get Tent Bag (290×210) now?
+    - Is the Tent Bag (290×210) sold out?
+    - Is Floor Mat (360×360) available?
+    - Do you have Floor Mat (360×360) in stock?
+    - Can I get Floor Mat (360×360) now?
+    - Is the Floor Mat (360×360) sold out?
+    - Is Floor Mat (420×320) available?
+    - Do you have Floor Mat (420×320) in stock?
+    - Can I get Floor Mat (420×320) now?
+    - Is the Floor Mat (420×320) sold out?
+    - Is Hand Pump available?
+    - Do you have Hand Pump in stock?
+    - Can I get Hand Pump now?
+    - Is the Hand Pump sold out?
+    - Is Floor Mat (340×340) available?
+    - Do you have Floor Mat (340×340) in stock?
+    - Can I get Floor Mat (340×340) now?
+    - Is the Floor Mat (340×340) sold out?
+    - Is Tent Bag (240×170) available?
+    - Do you have Tent Bag (240×170) in stock?
+    - Can I get Tent Bag (240×170) now?
+    - Is the Tent Bag (240×170) sold out?
+    - Is Floor Mat (315×315) available?
+    - Do you have Floor Mat (315×315) in stock?
+    - Can I get Floor Mat (315×315) now?
+    - Is the Floor Mat (315×315) sold out?
+    - Is Floor Mat (310×280) available?
+    - Do you have Floor Mat (310×280) in stock?
+    - Can I get Floor Mat (310×280) now?
+    - Is the Floor Mat (310×280) sold out?
+    - Is Floor Mat (290×280) available?
+    - Do you have Floor Mat (290×280) in stock?
+    - Can I get Floor Mat (290×280) now?
+    - Is the Floor Mat (290×280) sold out?
+    - Is Floor Mat (250×250) available?
+    - Do you have Floor Mat (250×250) in stock?
+    - Can I get Floor Mat (250×250) now?
+    - Is the Floor Mat (250×250) sold out?
+    - Is Floor Mat (240×240) available?
+    - Do you have Floor Mat (240×240) in stock?
+    - Can I get Floor Mat (240×240) now?
+    - Is the Floor Mat (240×240) sold out?
+    - Is 20 Fixing Stakes available?
+    - Do you have 20 Fixing Stakes in stock?
+    - Can I get 20 Fixing Stakes now?
+    - Is the 20 Fixing Stakes sold out?
+    - Is 18 Fixing Stakes available?
+    - Do you have 18 Fixing Stakes in stock?
+    - Can I get 18 Fixing Stakes now?
+    - Is the 18 Fixing Stakes sold out?
+    - Is 16 Fixing Stakes available?
+    - Do you have 16 Fixing Stakes in stock?
+    - Can I get 16 Fixing Stakes now?
+    - Is the 16 Fixing Stakes sold out?
+    - Is 14 Fixing Stakes available?
+    - Do you have 14 Fixing Stakes in stock?
+    - Can I get 14 Fixing Stakes now?
+    - Is the 14 Fixing Stakes sold out?
+    - Is Tent Canopy Pole available?
+    - Do you have Tent Canopy Pole in stock?
+    - Can I get Tent Canopy Pole now?
+    - Is the Tent Canopy Pole sold out?
+    - Is 12 Fixing Stakes available?
+    - Do you have 12 Fixing Stakes in stock?
+    - Can I get 12 Fixing Stakes now?
+    - Is the 12 Fixing Stakes sold out?
+    - Is 10 Fixing Stakes available?
+    - Do you have 10 Fixing Stakes in stock?
+    - Can I get 10 Fixing Stakes now?
+    - Is the 10 Fixing Stakes sold out?
+    - Is 8 Fixing Stakes available?
+    - Do you have 8 Fixing Stakes in stock?
+    - Can I get 8 Fixing Stakes now?
+    - Is the 8 Fixing Stakes sold out?
+    - Is Inflation Valve available?
+    - Do you have Inflation Valve in stock?
+    - Can I get Inflation Valve now?
+    - Is the Inflation Valve sold out?
+    - Is 6 Fixing Stakes available?
+    - Do you have 6 Fixing Stakes in stock?
+    - Can I get 6 Fixing Stakes now?
+    - Is the 6 Fixing Stakes sold out?
+    - Is 4 Fixing Stakes available?
+    - Do you have 4 Fixing Stakes in stock?
+    - Can I get 4 Fixing Stakes now?
+    - Is the 4 Fixing Stakes sold out?
+    - Is 4 Pieces Yellow Tension Lanyard (Reflective) available?
+    - Do you have 4 Pieces Yellow Tension Lanyard (Reflective) in stock?
+    - Can I get 4 Pieces Yellow Tension Lanyard (Reflective) now?
+    - Is the 4 Pieces Yellow Tension Lanyard (Reflective) sold out?
+    - Is 4 Pieces Red Tension Lanyard (Reflective) available?
+    - Do you have 4 Pieces Red Tension Lanyard (Reflective) in stock?
+    - Can I get 4 Pieces Red Tension Lanyard (Reflective) now?
+    - Is the 4 Pieces Red Tension Lanyard (Reflective) sold out?
+    - Is 4 Pieces Green Tension Lanyard (Reflective) available?
+    - Do you have 4 Pieces Green Tension Lanyard (Reflective) in stock?
+    - Can I get 4 Pieces Green Tension Lanyard (Reflective) now?
+    - Is the 4 Pieces Green Tension Lanyard (Reflective) sold out?
+    - Is 4 Pieces Orange Tension Lanyard (Reflective) available?
+    - Do you have 4 Pieces Orange Tension Lanyard (Reflective) in stock?
+    - Can I get 4 Pieces Orange Tension Lanyard (Reflective) now?
+    - Is the 4 Pieces Orange Tension Lanyard (Reflective) sold out?
+    - Is 2 Pieces Orange Tension Lanyard (Reflective) available?
+    - Do you have 2 Pieces Orange Tension Lanyard (Reflective) in stock?
+    - Can I get 2 Pieces Orange Tension Lanyard (Reflective) now?
+    - Is the 2 Pieces Orange Tension Lanyard (Reflective) sold out?
+    - Is 2 Pieces Red Tension Lanyard (Reflective) available?
+    - Do you have 2 Pieces Red Tension Lanyard (Reflective) in stock?
+    - Can I get 2 Pieces Red Tension Lanyard (Reflective) now?
+    - Is the 2 Pieces Red Tension Lanyard (Reflective) sold out?
+    - Is 2 Pieces Green Tension Lanyard (Reflective) available?
+    - Do you have 2 Pieces Green Tension Lanyard (Reflective) in stock?
+    - Can I get 2 Pieces Green Tension Lanyard (Reflective) now?
+    - Is the 2 Pieces Green Tension Lanyard (Reflective) sold out?
+    - Is 2 Pieces Yellow Tension Lanyard (Reflective) available?
+    - Do you have 2 Pieces Yellow Tension Lanyard (Reflective) in stock?
+    - Can I get 2 Pieces Yellow Tension Lanyard (Reflective) now?
+    - Is the 2 Pieces Yellow Tension Lanyard (Reflective) sold out?
+    - Is Winnerwell Fire Guard Stove Table available?
+    - Do you have Winnerwell Fire Guard Stove Table in stock?
+    - Can I get Winnerwell Fire Guard Stove Table now?
+    - Is the Winnerwell Fire Guard Stove Table sold out?
+    - Is Winnerwell Nomad View 1G Large Full Package available?
+    - Do you have Winnerwell Nomad View 1G Large Full Package in stock?
+    - Can I get Winnerwell Nomad View 1G Large Full Package now?
+    - Is the Winnerwell Nomad View 1G Large Full Package sold out?
+    - Is Winnerwell Woodlander L Pizza Oven available?
+    - Do you have Winnerwell Woodlander L Pizza Oven in stock?
+    - Can I get Winnerwell Woodlander L Pizza Oven now?
+    - Is the Winnerwell Woodlander L Pizza Oven sold out?
+    - Is Winnerwell Nomad PLUS Double View Large available?
+    - Do you have Winnerwell Nomad PLUS Double View Large in stock?
+    - Can I get Winnerwell Nomad PLUS Double View Large now?
+    - Is the Winnerwell Nomad PLUS Double View Large sold out?
+    - Is WinnerWell Iron Stove available?
+    - Do you have WinnerWell Iron Stove in stock?
+    - Can I get WinnerWell Iron Stove now?
+    - Is the WinnerWell Iron Stove sold out?
+    - Is Winnerwell Pipe Oven L available?
+    - Do you have Winnerwell Pipe Oven L in stock?
+    - Can I get Winnerwell Pipe Oven L now?
+    - Is the Winnerwell Pipe Oven L sold out?
+    - Is Winnerwell Secondary Combustion Burner available?
+    - Do you have Winnerwell Secondary Combustion Burner in stock?
+    - Can I get Winnerwell Secondary Combustion Burner now?
+    - Is the Winnerwell Secondary Combustion Burner sold out?
+    - Is WinnerWell Secondary Combustion Portable Grill Firepit available?
+    - Do you have WinnerWell Secondary Combustion Portable Grill Firepit in stock?
+    - Can I get WinnerWell Secondary Combustion Portable Grill Firepit now?
+    - Is the WinnerWell Secondary Combustion Portable Grill Firepit sold out?
+    - Is WinnerWell L-Sized Flat Firepit available?
+    - Do you have WinnerWell L-Sized Flat Firepit in stock?
+    - Can I get WinnerWell L-Sized Flat Firepit now?
+    - Is the WinnerWell L-Sized Flat Firepit sold out?
+    - Is WinnerWell Fastfold Camp Table Charcoal BBQ Grill available?
+    - Do you have WinnerWell Fastfold Camp Table Charcoal BBQ Grill in stock?
+    - Can I get WinnerWell Fastfold Camp Table Charcoal BBQ Grill now?
+    - Is the WinnerWell Fastfold Camp Table Charcoal BBQ Grill sold out?
+    - Is Winnerwell L-sized Water Tank available?
+    - Do you have Winnerwell L-sized Water Tank in stock?
+    - Can I get Winnerwell L-sized Water Tank now?
+    - Is the Winnerwell L-sized Water Tank sold out?
+    - Is Winnerwell M-sized Water Tank available?
+    - Do you have Winnerwell M-sized Water Tank in stock?
+    - Can I get Winnerwell M-sized Water Tank now?
+    - Is the Winnerwell M-sized Water Tank sold out?
+    - Is Winnerwell Table Board+Bottom Tray Titanium available?
+    - Do you have Winnerwell Table Board+Bottom Tray Titanium in stock?
+    - Can I get Winnerwell Table Board+Bottom Tray Titanium now?
+    - Is the Winnerwell Table Board+Bottom Tray Titanium sold out?
+    - Is Winnerwell 14 Cup Stainless Percolator Coffee Pot available?
+    - Do you have Winnerwell 14 Cup Stainless Percolator Coffee Pot in stock?
+    - Can I get Winnerwell 14 Cup Stainless Percolator Coffee Pot now?
+    - Is the Winnerwell 14 Cup Stainless Percolator Coffee Pot sold out?
+    - Is Winnerwell 9 Cup Stainless Percolator Coffee Pot available?
+    - Do you have Winnerwell 9 Cup Stainless Percolator Coffee Pot in stock?
+    - Can I get Winnerwell 9 Cup Stainless Percolator Coffee Pot now?
+    - Is the Winnerwell 9 Cup Stainless Percolator Coffee Pot sold out?
+    - Is Winnerwell Woodlander L Pizza Oven Extension Legs available?
+    - Do you have Winnerwell Woodlander L Pizza Oven Extension Legs in stock?
+    - Can I get Winnerwell Woodlander L Pizza Oven Extension Legs now?
+    - Is the Winnerwell Woodlander L Pizza Oven Extension Legs sold out?
+    - Is Winnerwell Fiberglass FireProf Stove Mat available?
+    - Do you have Winnerwell Fiberglass FireProf Stove Mat in stock?
+    - Can I get Winnerwell Fiberglass FireProf Stove Mat now?
+    - Is the Winnerwell Fiberglass FireProf Stove Mat sold out?
+    - Is Fireproof Stove Mat (150×100) available?
+    - Do you have Fireproof Stove Mat (150×100) in stock?
+    - Can I get Fireproof Stove Mat (150×100) now?
+    - Is the Fireproof Stove Mat (150×100) sold out?
+    - Is Winnerwell L-sized Carrying Bag available?
+    - Do you have Winnerwell L-sized Carrying Bag in stock?
+    - Can I get Winnerwell L-sized Carrying Bag now?
+    - Is the Winnerwell L-sized Carrying Bag sold out?
+    - Is Winnerwell Glass Replacement available?
+    - Do you have Winnerwell Glass Replacement in stock?
+    - Can I get Winnerwell Glass Replacement now?
+    - Is the Winnerwell Glass Replacement sold out?
+    - Is Chimney Protector L available?
+    - Do you have Chimney Protector L in stock?
+    - Can I get Chimney Protector L now?
+    - Is the Chimney Protector L sold out?
+    - Is Winnerwell 90 Degree Pipe L available?
+    - Do you have Winnerwell 90 Degree Pipe L in stock?
+    - Can I get Winnerwell 90 Degree Pipe L now?
+    - Is the Winnerwell 90 Degree Pipe L sold out?
+    - Is Winnerwell 45 Degree Pipe L available?
+    - Do you have Winnerwell 45 Degree Pipe L in stock?
+    - Can I get Winnerwell 45 Degree Pipe L now?
+    - Is the Winnerwell 45 Degree Pipe L sold out?
+    - Is Fireproof Stove Mat (100×75) available?
+    - Do you have Fireproof Stove Mat (100×75) in stock?
+    - Can I get Fireproof Stove Mat (100×75) now?
+    - Is the Fireproof Stove Mat (100×75) sold out?
+    - Is Winnerwell Heat-resistant Gloves available?
+    - Do you have Winnerwell Heat-resistant Gloves in stock?
+    - Can I get Winnerwell Heat-resistant Gloves now?
+    - Is the Winnerwell Heat-resistant Gloves sold out?
+    - Is Winnerwell L-sized Pipe Brush available?
+    - Do you have Winnerwell L-sized Pipe Brush in stock?
+    - Can I get Winnerwell L-sized Pipe Brush now?
+    - Is the Winnerwell L-sized Pipe Brush sold out?
+    - Is Winnerwell 90 Degree Pipe M available?
+    - Do you have Winnerwell 90 Degree Pipe M in stock?
+    - Can I get Winnerwell 90 Degree Pipe M now?
+    - Is the Winnerwell 90 Degree Pipe M sold out?
+    - Is Winnerwell 45 Degree Pipe M available?
+    - Do you have Winnerwell 45 Degree Pipe M in stock?
+    - Can I get Winnerwell 45 Degree Pipe M now?
+    - Is the Winnerwell 45 Degree Pipe M sold out?
+    - Is Winnerwell M-sized Pipe Brush available?
+    - Do you have Winnerwell M-sized Pipe Brush in stock?
+    - Can I get Winnerwell M-sized Pipe Brush now?
+    - Is the Winnerwell M-sized Pipe Brush sold out?
+    - Is Winnerwell Extension Legs M&L & Grill Firepit available?
+    - Do you have Winnerwell Extension Legs M&L & Grill Firepit in stock?
+    - Can I get Winnerwell Extension Legs M&L & Grill Firepit now?
+    - Is the Winnerwell Extension Legs M&L & Grill Firepit sold out?
+    - Is Winnerwell Scrubbing Sponge available?
+    - Do you have Winnerwell Scrubbing Sponge in stock?
+    - Can I get Winnerwell Scrubbing Sponge now?
+    - Is the Winnerwell Scrubbing Sponge sold out?
+    - Is Inflatable Cinevision available?
+    - Do you have Inflatable Cinevision in stock?
+    - Can I get Inflatable Cinevision now?
+    - Is the Inflatable Cinevision sold out?
+- intent: ask_features
+  examples: |
+    - Does the LONDON PRESTIGE (S) have the feature: transparent sunroof & panoramic windows?
+    - Does the LONDON PRESTIGE (S) have the feature: fireproof stove jack (ø11 cm)?
+    - Does the LONDON PRESTIGE (S) have the feature: uv resistant (upf 80), antimicrobial, fully waterproof?
+    - Does the LONDON PRESTIGE (S) have the feature: snmz™ 9-point wind tensioning?
+    - Does the LONDON PRESTIGE (S) have the feature: airsnmz™ ventilation system?
+    - Does the LONDON PRESTIGE (S) have the feature: electric hook-up & lantern points?
+    - Does the LONDON PRESTIGE (S) have the feature: double zip door, extra rain cover, privacy curtains?
+    - Does the LONDON PRESTIGE (S) have the feature: smart valve system (touch deflate)?
+    - Does the LONDON PRESTIGE (S) have the feature: durable pe groundsheet?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: same as london prestige (s), but smaller and faster to inflate?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: patented design?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: uv and flame resistance?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: snmz™ structure?
+    - Does the AIR BUSHCRAFT PREMIUM have the feature: all-weather and stove compatible?
+    - Does the LONDON 360 DISCOVER (M) have the feature: full glamping design with 360° sunroof?
+    - Does the LONDON 360 DISCOVER (M) have the feature: patented panoramic window system?
+    - Does the LONDON 360 DISCOVER (M) have the feature: stove-compatible, smart valve deflation?
+    - Does the LONDON 360 DISCOVER (M) have the feature: tested to withstand 9 bft (80 km/h) winds?
+    - Does the LONDON 360 DISCOVER (M) have the feature: fully taped seams, antimicrobial fabric?
+    - Does the LONDON 360 DISCOVER (M) have the feature: snmz™ support system and airsnmz™ panel?
+    - Does the LONDON 360 DISCOVER (M) have the feature: electric lighting setup, privacy curtains, mosquito netting?
+    - Does the LONDON PRESTIGE (M) have the feature: same as discover (m), but slightly lighter and more compact?
+    - Does the LONDON PRESTIGE (M) have the feature: 4-season use, luxury glamping setup?
+    - Does the LONDON PRESTIGE (M) have the feature: stove compatibility and panoramic ventilation?
+    - Does the AERO CABIN have the feature: spacious and ergonomic design?
+    - Does the AERO CABIN have the feature: fireproof and antibacterial pvc flooring?
+    - Does the AERO CABIN have the feature: rated to -40 °f and +158 °f?
+    - Does the AERO CABIN have the feature: wind resistant up to 80 km/h?
+    - Does the AERO CABIN have the feature: smart valve and snmz™ structure?
+    - Does the AERO CABIN have the feature: fully waterproof, panoramic windows?
+    - Does the SÖNMEZ AIR BUNGALOW have the feature: patented design with high weather resistance?
+    - Does the SÖNMEZ AIR BUNGALOW have the feature: strong wind tolerance (80 km/h)?
+    - Does the SÖNMEZ AIR BUNGALOW have the feature: large living space with ergonomic layout?
+    - Does the SÖNMEZ AIR BUNGALOW have the feature: quick 10-minute setup?
+    - Does the AIR CAPSULE XXL have the feature: panoramic windows?
+    - Does the AIR CAPSULE XXL have the feature: antimicrobial and uv-resistant fabric?
+    - Does the AIR CAPSULE XXL have the feature: smart valve and airsnmz™ panel?
+    - Does the AIR CAPSULE XXL have the feature: durable boat pvc columns and snmz™ tension system?
+    - Does the AIR CAPSULE XXL have the feature: interior suitable for furniture and communal use?
+    - Does the AIR AQUILA have the feature: patented design for 4-season conditions?
+    - Does the AIR AQUILA have the feature: high weather resistance and waterproofing?
+    - Does the AIR AQUILA have the feature: ergonomic design with panoramic windows?
+    - Does the AIR AQUILA have the feature: quick setup with smart valve system?
+    - Does the SÖNMEZ MINI AIR BUNGALOW have the feature: compact yet spacious for 8-person glamping?
+    - Does the SÖNMEZ MINI AIR BUNGALOW have the feature: fully waterproof and weather-resistant?
+    - Does the SÖNMEZ MINI AIR BUNGALOW have the feature: fast setup with durable structure?
+    - Does the LONDON 360 DISCOVER have the feature: 360º panoramic view and transparent sunroof?
+    - Does the LONDON 360 DISCOVER have the feature: stove-compatible with chimney outlet?
+    - Does the LONDON 360 DISCOVER have the feature: spacious design, ideal for long vacations?
+    - Does the LONDON 360 have the feature: panoramic windows with transparent roof?
+    - Does the LONDON 360 have the feature: camping stove ready?
+    - Does the LONDON 360 have the feature: quick setup, premium glamping model?
+    - Does the LONDON FAMILY have the feature: durable and compact family glamping tent?
+    - Does the LONDON FAMILY have the feature: 4-season weather resistance?
+    - Does the LONDON FAMILY have the feature: quick inflation and easy storage?
+    - Does the LONDON FAMILY LIMITED EDITION have the feature: affordable limited edition glamping tent?
+    - Does the LONDON FAMILY LIMITED EDITION have the feature: all-weather protection?
+    - Does the LONDON FAMILY LIMITED EDITION have the feature: compatible with stove and accessories?
+    - Does the LONDON MAXIA 480 have the feature: panoramic windows and transparent sunroof?
+    - Does the LONDON MAXIA 480 have the feature: designed for extended glamping with large groups?
+    - Does the LONDON MAXIA 480 have the feature: heat-resistant chimney outlet for stove use?
+    - Does the LONDON MAXIA 480 have the feature: 4-season use, 9 bft wind resistance?
+    - Does the LONDON MAXIA 480 have the feature: smart valve, snmz™ tensioning, fireproof mat included?
+    - Does the SÖNMEZ FLOATING TENT have the feature: floats on water and usable on land?
+    - Does the SÖNMEZ FLOATING TENT have the feature: first of its kind inflatable floating tent?
+    - Does the SÖNMEZ FLOATING TENT have the feature: 100% waterproof, uv-protected, antimicrobial?
+    - Does the SÖNMEZ FLOATING TENT have the feature: compact for 4 people with 360° outdoor experience?
+    - Does the SÖNMEZ FLOATING TENT have the feature: ideal for lakes, streams, or rivers?
+    - Does the SÖNMEZ FLOATING TENT have the feature: wind resistant up to 9 bft (80 km/h)?
+- intent: tent_info_query
+  examples: |
+    - I am looking for LONDON PRESTIGE (S)
+    - Can you tell me about LONDON PRESTIGE (S)?
+    - Tell me about the LONDON PRESTIGE (S) tent
+    - What features does the LONDON PRESTIGE (S) have?
+    - I want info on london prestige s
+    - Do you have details about london prestige s?
+    - How big is LONDON PRESTIGE (S)?
+    - What's the weight of LONDON PRESTIGE (S)?
+    - I am looking for AIR BUSHCRAFT PREMIUM
+    - Can you tell me about AIR BUSHCRAFT PREMIUM?
+    - Tell me about the AIR BUSHCRAFT PREMIUM tent
+    - What features does the AIR BUSHCRAFT PREMIUM have?
+    - I want info on air bushcraft premium
+    - Do you have details about air bushcraft premium?
+    - How big is AIR BUSHCRAFT PREMIUM?
+    - What's the weight of AIR BUSHCRAFT PREMIUM?
+    - I am looking for LONDON 360 DISCOVER (M)
+    - Can you tell me about LONDON 360 DISCOVER (M)?
+    - Tell me about the LONDON 360 DISCOVER (M) tent
+    - What features does the LONDON 360 DISCOVER (M) have?
+    - I want info on london 360 discover m
+    - Do you have details about london 360 discover m?
+    - How big is LONDON 360 DISCOVER (M)?
+    - What's the weight of LONDON 360 DISCOVER (M)?
+    - I am looking for LONDON PRESTIGE (M)
+    - Can you tell me about LONDON PRESTIGE (M)?
+    - Tell me about the LONDON PRESTIGE (M) tent
+    - What features does the LONDON PRESTIGE (M) have?
+    - I want info on london prestige m
+    - Do you have details about london prestige m?
+    - How big is LONDON PRESTIGE (M)?
+    - What's the weight of LONDON PRESTIGE (M)?
+    - I am looking for AERO CABIN
+    - Can you tell me about AERO CABIN?
+    - Tell me about the AERO CABIN tent
+    - What features does the AERO CABIN have?
+    - I want info on aero cabin
+    - Do you have details about aero cabin?
+    - How big is AERO CABIN?
+    - What's the weight of AERO CABIN?
+    - I am looking for SÖNMEZ AIR BUNGALOW
+    - Can you tell me about SÖNMEZ AIR BUNGALOW?
+    - Tell me about the SÖNMEZ AIR BUNGALOW tent
+    - What features does the SÖNMEZ AIR BUNGALOW have?
+    - I want info on sönmez air bungalow
+    - Do you have details about sönmez air bungalow?
+    - How big is SÖNMEZ AIR BUNGALOW?
+    - What's the weight of SÖNMEZ AIR BUNGALOW?
+    - I am looking for AIR CAPSULE XXL
+    - Can you tell me about AIR CAPSULE XXL?
+    - Tell me about the AIR CAPSULE XXL tent
+    - What features does the AIR CAPSULE XXL have?
+    - I want info on air capsule xxl
+    - Do you have details about air capsule xxl?
+    - How big is AIR CAPSULE XXL?
+    - What's the weight of AIR CAPSULE XXL?
+    - I am looking for AIR AQUILA
+    - Can you tell me about AIR AQUILA?
+    - Tell me about the AIR AQUILA tent
+    - What features does the AIR AQUILA have?
+    - I want info on air aquila
+    - Do you have details about air aquila?
+    - How big is AIR AQUILA?
+    - What's the weight of AIR AQUILA?
+    - I am looking for SÖNMEZ MINI AIR BUNGALOW
+    - Can you tell me about SÖNMEZ MINI AIR BUNGALOW?
+    - Tell me about the SÖNMEZ MINI AIR BUNGALOW tent
+    - What features does the SÖNMEZ MINI AIR BUNGALOW have?
+    - I want info on sönmez mini air bungalow
+    - Do you have details about sönmez mini air bungalow?
+    - How big is SÖNMEZ MINI AIR BUNGALOW?
+    - What's the weight of SÖNMEZ MINI AIR BUNGALOW?
+    - I am looking for LONDON 360 DISCOVER
+    - Can you tell me about LONDON 360 DISCOVER?
+    - Tell me about the LONDON 360 DISCOVER tent
+    - What features does the LONDON 360 DISCOVER have?
+    - I want info on london 360 discover
+    - Do you have details about london 360 discover?
+    - How big is LONDON 360 DISCOVER?
+    - What's the weight of LONDON 360 DISCOVER?
+    - I am looking for LONDON 360
+    - Can you tell me about LONDON 360?
+    - Tell me about the LONDON 360 tent
+    - What features does the LONDON 360 have?
+    - I want info on london 360
+    - Do you have details about london 360?
+    - How big is LONDON 360?
+    - What's the weight of LONDON 360?
+    - I am looking for LONDON FAMILY
+    - Can you tell me about LONDON FAMILY?
+    - Tell me about the LONDON FAMILY tent
+    - What features does the LONDON FAMILY have?
+    - I want info on london family
+    - Do you have details about london family?
+    - How big is LONDON FAMILY?
+    - What's the weight of LONDON FAMILY?
+    - I am looking for LONDON FAMILY LIMITED EDITION
+    - Can you tell me about LONDON FAMILY LIMITED EDITION?
+    - Tell me about the LONDON FAMILY LIMITED EDITION tent
+    - What features does the LONDON FAMILY LIMITED EDITION have?
+    - I want info on london family limited edition
+    - Do you have details about london family limited edition?
+    - How big is LONDON FAMILY LIMITED EDITION?
+    - What's the weight of LONDON FAMILY LIMITED EDITION?
+    - I am looking for LONDON MAXIA 480
+    - Can you tell me about LONDON MAXIA 480?
+    - Tell me about the LONDON MAXIA 480 tent
+    - What features does the LONDON MAXIA 480 have?
+    - I want info on london maxia 480
+    - Do you have details about london maxia 480?
+    - How big is LONDON MAXIA 480?
+    - What's the weight of LONDON MAXIA 480?
+    - I am looking for SÖNMEZ FLOATING TENT
+    - Can you tell me about SÖNMEZ FLOATING TENT?
+    - Tell me about the SÖNMEZ FLOATING TENT tent
+    - What features does the SÖNMEZ FLOATING TENT have?
+    - I want info on sönmez floating tent
+    - Do you have details about sönmez floating tent?
+    - How big is SÖNMEZ FLOATING TENT?
+    - What's the weight of SÖNMEZ FLOATING TENT?
+- intent: tent_by_capacity
+  examples: |
+    - I am looking for a single tent
+    - Show me a tent for single
+    - Do you have a single inflatable tent?
+    - What single tents do you offer?
+    - Which tents are suitable for single?
+    - I need a single camping tent
+    - I am looking for a 2 person tent
+    - Show me a tent for 2 person
+    - Do you have a 2 person inflatable tent?
+    - What 2 person tents do you offer?
+    - Which tents are suitable for 2 person?
+    - I need a 2 person camping tent
+    - I am looking for a 2 people tent
+    - Show me a tent for 2 people
+    - Do you have a 2 people inflatable tent?
+    - What 2 people tents do you offer?
+    - Which tents are suitable for 2 people?
+    - I need a 2 people camping tent
+    - I am looking for a 2-person tent
+    - Show me a tent for 2-person
+    - Do you have a 2-person inflatable tent?
+    - What 2-person tents do you offer?
+    - Which tents are suitable for 2-person?
+    - I need a 2-person camping tent
+    - I am looking for a 4 person tent
+    - Show me a tent for 4 person
+    - Do you have a 4 person inflatable tent?
+    - What 4 person tents do you offer?
+    - Which tents are suitable for 4 person?
+    - I need a 4 person camping tent
+    - I am looking for a 4 people tent
+    - Show me a tent for 4 people
+    - Do you have a 4 people inflatable tent?
+    - What 4 people tents do you offer?
+    - Which tents are suitable for 4 people?
+    - I need a 4 people camping tent
+    - I am looking for a 4-person tent
+    - Show me a tent for 4-person
+    - Do you have a 4-person inflatable tent?
+    - What 4-person tents do you offer?
+    - Which tents are suitable for 4-person?
+    - I need a 4-person camping tent
+    - I am looking for a 6 person tent
+    - Show me a tent for 6 person
+    - Do you have a 6 person inflatable tent?
+    - What 6 person tents do you offer?
+    - Which tents are suitable for 6 person?
+    - I need a 6 person camping tent
+    - I am looking for a 6 people tent
+    - Show me a tent for 6 people
+    - Do you have a 6 people inflatable tent?
+    - What 6 people tents do you offer?
+    - Which tents are suitable for 6 people?
+    - I need a 6 people camping tent
+    - I am looking for a 6-person tent
+    - Show me a tent for 6-person
+    - Do you have a 6-person inflatable tent?
+    - What 6-person tents do you offer?
+    - Which tents are suitable for 6-person?
+    - I need a 6-person camping tent
+    - I am looking for a 10 person tent
+    - Show me a tent for 10 person
+    - Do you have a 10 person inflatable tent?
+    - What 10 person tents do you offer?
+    - Which tents are suitable for 10 person?
+    - I need a 10 person camping tent
+    - I am looking for a 10 people tent
+    - Show me a tent for 10 people
+    - Do you have a 10 people inflatable tent?
+    - What 10 people tents do you offer?
+    - Which tents are suitable for 10 people?
+    - I need a 10 people camping tent
+    - I am looking for a 10-person tent
+    - Show me a tent for 10-person
+    - Do you have a 10-person inflatable tent?
+    - What 10-person tents do you offer?
+    - Which tents are suitable for 10-person?
+    - I need a 10-person camping tent
+    - I am looking for a 14 person tent
+    - Show me a tent for 14 person
+    - Do you have a 14 person inflatable tent?
+    - What 14 person tents do you offer?
+    - Which tents are suitable for 14 person?
+    - I need a 14 person camping tent
+    - I am looking for a 14 people tent
+    - Show me a tent for 14 people
+    - Do you have a 14 people inflatable tent?
+    - What 14 people tents do you offer?
+    - Which tents are suitable for 14 people?
+    - I need a 14 people camping tent
+    - I am looking for a 14-person tent
+    - Show me a tent for 14-person
+    - Do you have a 14-person inflatable tent?
+    - What 14-person tents do you offer?
+    - Which tents are suitable for 14-person?
+    - I need a 14-person camping tent

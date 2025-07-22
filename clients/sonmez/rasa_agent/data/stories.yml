@@ -1,0 +1,53 @@
+version: "3.1"
+
+stories:
+
+- story: greet and general question
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: general_question
+    - action: utter_general_question
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: tent info inquiry
+  steps:
+    - intent: tent_info_query
+    - action: utter_tent_info_query
+    - intent: ask_features
+    - action: utter_ask_features
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: product availability check
+  steps:
+    - intent: check_availability
+    - action: utter_check_availability
+    - intent: order_accessory
+    - action: utter_order_accessory
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: quote request flow
+  steps:
+    - intent: request_quote
+    - action: utter_request_quote
+    - intent: order_accessory
+    - action: utter_order_accessory
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: comparison and inquiry
+  steps:
+    - intent: product_compare
+    - action: utter_product_compare
+    - intent: ask_features
+    - action: utter_ask_features
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: fallback response
+  steps:
+    - intent: fallback
+    - action: utter_fallback

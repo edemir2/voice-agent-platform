@@ -1,0 +1,21 @@
+echo "
+# Python venvs
+venv/
+rasa-env/
+*/venv/
+*/rasa-env/
+
+# Cache & compiled files
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# OS & IDE stuff
+.DS_Store
+
+# Other heavy folders (optional)
+models/
+audio/
+" > .gitignore
