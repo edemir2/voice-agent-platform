@@ -1,1 +1,0 @@
-https://raw.githubusercontent.com/RasaHQ/rasa/3.5.x/pyproject.toml

@@ -1,112 +1,47 @@
-from flask import Flask, request, send_file, Response
-from openai import OpenAI  # OpenAI Chat API client
-import json
 import os
-import requests
-from datetime import datetime
 from dotenv import load_dotenv
-import re
-import platform
+from flask import Flask, request, send_file, Response
+from datetime import datetime
 import tempfile
+import requests
 
+
+
+from data.product_loader import load_tent_products, load_accessories
+from llm_logic.product_matcher import match_product
+from llm_logic.assistant_handler import run_assistant
+from voice.elevenlabs_tts import generate_audio
+
+# === INIT APP ===
 app = Flask(__name__)
 
-# === LOAD ENVIRONMENT VARIABLES ===
-load_dotenv()
+env_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '.env'))
+load_dotenv(dotenv_path=env_path)
 
-# === INIT OPENAI CLIENT ===
-client = OpenAI()  # Uses OPENAI_API_KEY from environment
 
-# === LOAD API KEYS AND CONFIG ===
+# === ENV VARIABLES ===
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 ELEVENLABS_VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID")
 NGROK_BASE_URL = os.getenv("NGROK_BASE_URL")
+assert ELEVENLABS_API_KEY and ELEVENLABS_VOICE_ID and NGROK_BASE_URL, "Missing ENV variables"
 
-# Ensure all required keys are present
-assert ELEVENLABS_API_KEY, "Missing ELEVENLABS_API_KEY"
-assert ELEVENLABS_VOICE_ID, "Missing ELEVENLABS_VOICE_ID"
-assert NGROK_BASE_URL, "Missing NGROK_BASE_URL"
+# === LOAD DATA ===
+tents = load_tent_products()
+accessories = load_accessories()
 
-print(f"--- Using ElevenLabs Key ending in: ...{ELEVENLABS_API_KEY[-4:]}")
-
-# === LOAD PRODUCT DATA ===
-with open("structured_tent_products.json", "r") as f:
-    tents = json.load(f)
-
-with open("scraped_accessories.json", "r") as f:
-    accessories = json.load(f)
-
-# === CONTEXT FOR GENERAL RESPONSES ===
-product_names = [product['name'] for product in tents]
-brief_product_context = "The available tent models are: " + ", ".join(product_names) + "."
-
-# === MAIN TWILIO WEBHOOK ENDPOINT ===
+# === TWILIO VOICE WEBHOOK ===
 @app.route("/voice-webhook", methods=["POST"])
 def voice_webhook():
     user_input = request.form.get("SpeechResult", "")
+    mentioned_product = match_product(user_input, tents)
+    answer = run_assistant(user_input, mentioned_product, tents)
 
-    # --- Step 1: Try to match a product from user input ---
-    mentioned_product = None
-    for product in tents:
-        if product['name'].lower() in user_input.lower():
-            mentioned_product = product
-            break
-
-    # --- Step 2: Set up the system prompt & context ---
-    system_prompt = ""
-    context_to_use = ""
-
-    if mentioned_product:
-        # If a specific product is mentioned, prepare expert mode
-        system_prompt = (
-            "You are a product expert. A customer is asking about a specific product. "
-            "Using only the detailed information provided, answer their question naturally and concisely. "
-            "If the answer isn't in the details, say you don't have that specific information."
-        )
-
-        # Filter relevant details to build a narrow context
-        details_to_include = []
-        keywords_to_find = ["Fabric:", "Cold Resistance:", "High Temperature:",
-                            "Sun Protection Factor:", "Wind Resistance:", "Dimensions:"]
-        for detail in mentioned_product.get('material_details', []):
-            if any(keyword in detail for keyword in keywords_to_find):
-                details_to_include.append(f"- {detail.strip()}")
-
-        context_to_use = (
-            f"Answering questions about: {mentioned_product['name']}\n"
-            f"Key Details:\n" +
-            "\n".join(details_to_include) if details_to_include else "No specific material details available."
-        )
-    else:
-        # If no product is mentioned, use greeter mode
-        system_prompt = (
-            "You are a friendly greeter for Sönmez Outdoor. You can answer general questions or list the available products. "
-            "Keep your answers brief and encourage the user to ask about a specific model."
-        )
-        context_to_use = brief_product_context
-
-    # --- Step 3: Send prompt and context to OpenAI ---
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "system", "content": context_to_use},
-        {"role": "user", "content": user_input}
-    ]
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=messages
-    )
-    answer = response.choices[0].message.content
-
-    # Fallback if model fails to generate a response
-    if not answer or not answer.strip():
+    if not answer.strip():
         answer = "I'm sorry, I didn't quite understand. Could you please say that again?"
 
-    # --- Step 4: Generate audio with ElevenLabs and prepare TwiML response ---
-    tts_audio = elevenlabs_tts(answer)
-
-    # If TTS fails, respond with a fallback message
+    tts_audio = generate_audio(answer)
     if tts_audio is None:
-        twiml = f"""
+        twiml = """
         <Response>
             <Say voice="alice">I'm sorry, I am having trouble responding right now.</Say>
             <Gather input="speech" action="/voice-webhook" speechTimeout="auto" />
@@ -114,7 +49,7 @@ def voice_webhook():
         """
         return Response(twiml, mimetype="text/xml")
 
-    # Save audio file to a temporary directory
+    # Save and play audio
     temp_dir = tempfile.gettempdir()
     filename = f"tts_{datetime.now().timestamp():.0f}.mp3"
     file_path = os.path.join(temp_dir, filename)
@@ -129,42 +64,15 @@ def voice_webhook():
         <Gather input="speech" action="{action_url}" speechTimeout="auto" />
     </Response>
     """
-    # Return TwiML response
     return Response(twiml, mimetype="text/xml")
 
-# === AUDIO PLAYBACK ENDPOINT FOR TWILIO ===
+# === AUDIO FILE ENDPOINT ===
 @app.route("/audio/<filename>")
 def audio(filename):
     temp_dir = tempfile.gettempdir()
     return send_file(os.path.join(temp_dir, filename), mimetype="audio/mpeg")
 
-
-# === ELEVENLABS TTS HELPER FUNCTION ===
-def elevenlabs_tts(text):
-    url = f"https://api.elevenlabs.io/v1/text-to-speech/{ELEVENLABS_VOICE_ID}"
-    headers = {
-        "xi-api-key": ELEVENLABS_API_KEY,
-        "Accept": "audio/mpeg",
-        "Content-Type": "application/json"
-    }
-    payload = {
-        "text": text,
-        "model_id": "eleven_turbo_v2",
-        "voice_settings": {
-            "stability": 0.5,
-            "similarity_boost": 0.5
-        }
-    }
-    try:
-        response = requests.post(url, json=payload, headers=headers, timeout=15)
-        response.raise_for_status()  # Raise error if request failed
-        return response.content
-    except requests.exceptions.RequestException as e:
-        print(f"Error calling ElevenLabs API: {e}")
-        return None
-
-
-# === PLACEHOLDER FOR ORDER STATUS CHECKING ===
+# === OPTIONAL: ORDER STATUS PLACEHOLDER ===
 def get_order_status_from_woocommerce(order_id):
     url = f"https://yourshop.com/wp-json/wc/v3/orders/{order_id}"
     auth = (os.getenv("WC_KEY"), os.getenv("WC_SECRET"))
@@ -178,7 +86,6 @@ def get_order_status_from_woocommerce(order_id):
     except requests.exceptions.RequestException:
         return "Sorry, I'm having trouble connecting to the order system right now."
 
-
-# === RUN THE APP LOCALLY ON PORT 5009 ===
+# === RUN LOCALLY ===
 if __name__ == "__main__":
     app.run(port=5009)
