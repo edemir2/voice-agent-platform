@@ -1,0 +1,1069 @@
+[
+  {
+    "intent_name": "company_specialization",
+    "question_variants": [
+      "What is Sönmez Outdoor?",
+      "What do you do?",
+      "What do you sell?",
+      "What do you specialize in?"
+    ],
+    "short_answer_voice": "Sönmez Outdoor specializes in high-performance inflatable tents for recreational and professional use, known for their durability and quick setup.",
+    "short_answer_text": "We specialize in premium inflatable shelters for everything from camping and glamping to emergency response. Our tents are known for combining *quick setup*, *high durability*, and *4-season performance*.",
+    "follow_up_prompt": "Would you like to know more about our company's experience or what makes our technology different?",
+    "quick_replies": [
+      "Our experience",
+      "What makes you different"
+    ]
+  },
+  {
+    "intent_name": "company_experience",
+    "question_variants": [
+      "How many years of experience does your company have?",
+      "How long have you been in business?",
+      "Are you an experienced company?"
+    ],
+    "short_answer_voice": "We have over 25 years of engineering and manufacturing experience in developing advanced inflatable tent systems.",
+    "short_answer_text": "We have over 25 years of engineering and manufacturing experience in developing advanced inflatable tent systems.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "company_manufacturing_location",
+    "question_variants": [
+      "Where are Sönmez tents manufactured?",
+      "Where are your tents made?",
+      "Are your tents made in Turkey?"
+    ],
+    "short_answer_voice": "All of our tents are expertly manufactured in Istanbul, Turkey, using certified materials and strict quality control.",
+    "short_answer_text": "All of our tents are expertly manufactured in Istanbul, Turkey, using certified materials and strict quality control standards.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "company_export",
+    "question_variants": [
+      "Do you export tents internationally?",
+      "Do you ship worldwide?",
+      "Can I get a tent outside of Turkey?"
+    ],
+    "short_answer_voice": "Yes, we proudly serve and ship to clients worldwide, including the U.S., Europe, the Middle East, and Africa.",
+    "short_answer_text": "Yes, we proudly serve clients across the U.S., Europe, the Middle East, and Africa. All U.S. orders are shipped with *free air cargo delivery* from our factory.",
+    "follow_up_prompt": "Would you like to know more about shipping to the US?",
+    "quick_replies": [
+      "US Shipping Details"
+    ]
+  },
+  {
+    "intent_name": "company_differentiation",
+    "question_variants": [
+      "What makes your brand different?",
+      "Why are your tents better than others?",
+      "What makes you stand out?"
+    ],
+    "short_answer_voice": "Our inflatable tents are designed for rapid setup, military-grade durability, and 4-season weather resistance, all backed by our U.S. based customer support.",
+    "short_answer_text": "Our inflatable tents stand out with *rapid setup*, *military-grade durability*, and *4-season weather resistance*. We combine patented designs with responsive U.S. based support.",
+    "follow_up_prompt": "I can give you more details on our fast setup, our durability, or our weather resistance. What interests you most?",
+    "quick_replies": [
+      "Fast Setup",
+      "Durability",
+      "Weather Resistance"
+    ]
+  },
+  {
+    "intent_name": "company_professional_clients",
+    "question_variants": [
+      "Who uses your tents?",
+      "Do any professionals use your tents?",
+      "What organizations are your clients?"
+    ],
+    "short_answer_voice": "Yes, our tents are trusted by professional organizations worldwide, including military, emergency management, and health services.",
+    "short_answer_text": "Yes, our tents are trusted by professional organizations worldwide, including *military*, *emergency management*, and *health services*.",
+    "follow_up_prompt": "Would you like to hear some specific examples of our clients?",
+    "quick_replies": [
+      "Yes, give me examples"
+    ],
+    "detailed_info": "Clients include: United States Air Force, AFAD (Turkey’s Disaster and Emergency Management Authority), Turkish Ministry of Health, and various Special Forces and Fire Technics teams."
+  },
+  {
+    "intent_name": "company_visit_showroom",
+    "question_variants": [
+      "Can I visit your manufacturing site or showroom?",
+      "Can I see the tents in person?",
+      "Do you have a showroom?"
+    ],
+    "short_answer_voice": "Yes, you are welcome to visit our factory and showroom in Istanbul, Turkey by appointment. We also offer virtual appointments for those located elsewhere.",
+    "short_answer_text": "Yes! You're welcome to visit our factory and showroom in Istanbul, Turkey (please call to book an appointment). If you're elsewhere, our US and EU offices are available for *virtual appointments*.",
+    "follow_up_prompt": "Would you like the address for the factory in Turkey or information on booking a virtual meeting?",
+    "quick_replies": [
+      "Get Factory Address",
+      "Book Virtual Meeting"
+    ]
+  },
+  {
+    "intent_name": "company_mission",
+    "question_variants": [
+      "What is your company's mission?",
+      "What is your long-term vision?",
+      "What does your company stand for?"
+    ],
+    "short_answer_voice": "Our mission is to create high-performance tent systems that combine durability, elegance, and comfort, redefining outdoor living.",
+    "short_answer_text": "Our mission is to design the extraordinary. We create high-performance tent systems that combine durability, elegance, and comfort to redefine outdoor living and become a global symbol of refined, secure outdoor spaces.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "company_collaboration",
+    "question_variants": [
+      "Do you collaborate with universities?",
+      "Do you work with research institutions?",
+      "Are you open to collaboration?"
+    ],
+    "short_answer_voice": "Yes, we are open to all kinds of collaborations with universities, research institutions, and innovation partners.",
+    "short_answer_text": "Yes, we are open to all kinds of collaborations with universities, research institutions, and innovation partners. You can email proposals or ideas to info@sonmezoutdoor.com.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "product_certifications",
+    "question_variants": [
+      "Are your tents certified?",
+      "What patents do you have?",
+      "What standards do your tents meet?"
+    ],
+    "short_answer_voice": "Yes, all our designs are patented, and our materials are certified to international standards for safety and durability.",
+    "short_answer_text": "Yes, all our designs are patented and our materials are certified to international standards for things like waterproofing, fire resistance, and wind resistance.",
+    "follow_up_prompt": "I can provide specifics on waterproofing, wind resistance, or cold resistance. Which would you like to know more about?",
+    "quick_replies": [
+      "Waterproofing",
+      "Wind Resistance",
+      "Cold Resistance"
+    ],
+    "detailed_info": {
+      "Waterproofing": "DIN EN ISO 2076 – 100% waterproof polyester fabric",
+      "Wind Resistance": "Withstands up to 50 mph winds",
+      "Cold Resistance": "EN 1876-1 – Cold resistance down to -40°F",
+      "Sun Protection": "UV Standard 801 – Sun Protection Factor of 80",
+      "Inflatable Columns": "EN ISO 2286-2 – BOAT PVC",
+      "Flooring": "Fireproof and antibacterial PVC"
+    }
+  },
+  {
+    "intent_name": "product_durability",
+    "question_variants": [
+      "How durable are your tents?",
+      "How long do the tents last?",
+      "Are your tents built to last?"
+    ],
+    "short_answer_voice": "Our tents are built to last for years with proper care. We use premium, field-tested materials and reinforced construction.",
+    "short_answer_text": "Our tents are built to last for years with proper care. We use premium, field-tested materials and reinforced construction for maximum longevity.",
+    "follow_up_prompt": "Would you like to know about our warranty?",
+    "quick_replies": [
+      "Tell me about the warranty"
+    ]
+  },
+  {
+    "intent_name": "product_compactness",
+    "question_variants": [
+      "How compact is the tent when packed?",
+      "How big is the tent when packed up?",
+      "Is it easy to transport?"
+    ],
+    "short_answer_voice": "Our tents pack down into a carry bag that easily fits in the trunk of a standard car, making them very easy to transport.",
+    "short_answer_text": "Our tents pack down into a carry bag that fits in the trunk of a standard car, making them easy to store and transport.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "product_sizes",
+    "question_variants": [
+      "Do you sell tents in different sizes?",
+      "What sizes do your tents come in?",
+      "Do you have family-sized tents?"
+    ],
+    "short_answer_voice": "Yes, we offer a wide range of sizes, from smaller 1-person models all the way up to large 14-person tents.",
+    "short_answer_text": "Yes, we offer a wide range of sizes from 1-person to 14-person tents, suitable for solo trips, couples, and large families.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "product_glamping_suitability",
+    "question_variants": [
+      "Can your tents be used for glamping?",
+      "Are these good for glamping?"
+    ],
+    "short_answer_voice": "Absolutely. Many of our models are specifically designed with glamping in mind, featuring spacious interiors and panoramic windows.",
+    "short_answer_text": "Definitely! Many of our models are designed with glamping in mind—featuring spacious interiors, panoramic windows, and stove compatibility.",
+    "follow_up_prompt": "Would you like to know which models are best for glamping?",
+    "quick_replies": [
+      "Yes, which models?"
+    ]
+  },
+  {
+    "intent_name": "product_pre_shipping_testing",
+    "question_variants": [
+      "Do you test tents before shipping?",
+      "Is my tent tested before I get it?"
+    ],
+    "short_answer_voice": "Yes, every single tent is fully inflated and tested for quality assurance before it's shipped.",
+    "short_answer_text": "Yes, each tent is fully inflated and tested before shipping, and we even provide a 360° quality assurance video.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "product_vs_pole_tents",
+    "question_variants": [
+      "How are your tents different from traditional pole tents?",
+      "Why an inflatable tent over a pole tent?"
+    ],
+    "short_answer_voice": "Our tents use inflatable air beams instead of poles. This makes setup much faster and the tent more stable and flexible in extreme weather.",
+    "short_answer_text": "Instead of poles, our tents use inflatable air beams. This allows for *faster setup* and provides better flexibility and stability in extreme weather conditions.",
+    "follow_up_prompt": "Would you like to know more about the setup process?",
+    "quick_replies": [
+      "Tell me about setup"
+    ]
+  },
+  {
+    "intent_name": "product_ventilation",
+    "question_variants": [
+      "Do your tents have ventilation?",
+      "Is there a ventilation system?",
+      "How is the airflow in the tents?"
+    ],
+    "short_answer_voice": "While there's no built-in mechanical ventilation, the tent's design supports excellent airflow, and you can easily install fans or other vent solutions inside.",
+    "short_answer_text": "There’s no built-in mechanical ventilation, but the design supports excellent airflow, and you are free to install fans or ventilation solutions inside as needed.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "usage_solo_setup",
+    "question_variants": [
+      "Can one person set up the tent alone?",
+      "Is it a one-person setup?",
+      "How many people does it take to set up?"
+    ],
+    "short_answer_voice": "Yes, most of our tents are designed to be easily set up by just one person in a few minutes using the included pump.",
+    "short_answer_text": "Yes! Most of our models are designed for solo setup in just a few minutes using the included inflation pump.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "usage_user_manual",
+    "question_variants": [
+      "Do your tents come with a user manual or guide?",
+      "Are there instructions included?",
+      "Where can I find setup instructions?"
+    ],
+    "short_answer_voice": "Yes, every tent comes with a detailed user manual to guide you through setup, usage, and storage.",
+    "short_answer_text": "Yes. Every tent includes a detailed user manual with setup, usage, and storage instructions.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "usage_beginner_friendly",
+    "question_variants": [
+      "Are your tents suitable for beginners?",
+      "Are these tents easy to use?",
+      "Do I need experience to use your tents?"
+    ],
+    "short_answer_voice": "Yes, they are absolutely beginner-friendly. You just inflate the tent and secure it with stakes, no complicated poles are required.",
+    "short_answer_text": "They’re absolutely beginner-friendly. Just inflate and secure with stakes — no complicated poles or tools required.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "pricing_color_difference",
+    "question_variants": [
+      "Is there a price difference between color options?",
+      "Do different colors cost more?",
+      "Does the camo tent cost more?"
+    ],
+    "short_answer_voice": "Yes, there can be a slight price difference. The Desert Camo option typically costs a bit more than our standard colors.",
+    "short_answer_text": "Yes. The *Desert Camo* option typically costs slightly more, while other color options are priced at the standard rate.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "pricing_international_variance",
+    "question_variants": [
+      "Are prices the same for international customers?",
+      "Do prices change by country?",
+      "Is the price the same in the US and EU?"
+    ],
+    "short_answer_voice": "Prices do vary by region. Our website automatically shows the correct pricing for your location, whether you're in the US, Europe, or elsewhere.",
+    "short_answer_text": "Prices vary by region. You can view our pricing for the *US, Türkiye, EU, South Korea, Canada*, and more directly on our website.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "payment_accepted_methods",
+    "question_variants": [
+      "What payment methods do you accept?",
+      "How can I pay?",
+      "Do you take credit cards?"
+    ],
+    "short_answer_voice": "We currently accept all major debit and credit cards.",
+    "short_answer_text": "We currently accept debit and credit cards.",
+    "follow_up_prompt": "Are you interested in other payment options like PayPal or financing?",
+    "quick_replies": [
+      "PayPal or Apple Pay?",
+      "Financing options?"
+    ]
+  },
+  {
+    "intent_name": "payment_digital_wallets",
+    "question_variants": [
+      "Can I pay with PayPal?",
+      "Do you take Apple Pay?",
+      "Can I use Google Pay?"
+    ],
+    "short_answer_voice": "We do offer Apple Pay, Google Pay, Klarna, Stripe and any credit card payment as part of our financing options in the U.S.",
+    "short_answer_text": "While we don't accept PayPal directly yet, we do offer *Apple Pay*, *Klarna*, *Stripe* ,and *Google Pay* as financing options in the U.S. We are working on adding more payment methods soon.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "pricing_inclusions",
+    "question_variants": [
+      "Do prices include tax and shipping?",
+      "Is shipping included in the price?",
+      "Are there extra fees?"
+    ],
+    "short_answer_voice": "Yes, for U.S. orders, all listed prices include taxes and shipping fees, so there are no hidden costs.",
+    "short_answer_text": "Yes, for U.S. orders, all listed prices include taxes and shipping fees, so there are no hidden costs. Please note that on rare occasions, a customs fee may be applied by the carrier based on U.S. regulations.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "pricing_discounts",
+    "question_variants": [
+      "Do you offer sales or discounts?",
+      "Can I get a discount?",
+      "Are there any promotions?"
+    ],
+    "short_answer_voice": "Yes, we occasionally offer seasonal sales and exclusive discounts. The best way to stay informed is to subscribe to our newsletter.",
+    "short_answer_text": "Yes, we occasionally offer seasonal sales and exclusive discounts. You can subscribe to our newsletter through our website to stay informed about upcoming offers and promotions.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "payment_financing_options",
+    "question_variants": [
+      "Do you offer financing?",
+      "Can I pay in installments?",
+      "Do you accept Klarna?"
+    ],
+    "short_answer_voice": "Yes, in the U.S., we offer several payment options, including Klarna, Apple Pay, and Google Pay.",
+    "short_answer_text": "Yes. In the U.S., we offer various payment options, including *Klarna, Apple Pay, and Google Pay*. You can view all available financing options at checkout on our website.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "pricing_formal_quote",
+    "question_variants": [
+      "How do I get a formal quote?",
+      "Can I get a quote for a large order?",
+      "I need a quote for my business."
+    ],
+    "short_answer_voice": "For a formal quote, especially for a large order, please email our team through the contact form on our website.",
+    "short_answer_text": "Please email us through the contact form on our website, and our team will provide a formal quote tailored to your needs.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "pricing_hidden_fees",
+    "question_variants": [
+      "Are there hidden fees?",
+      "Is the price I see the final price?"
+    ],
+    "short_answer_voice": "No, our pricing is fully transparent with no hidden fees. The price you see is the price you pay.",
+    "short_answer_text": "No, our pricing is fully transparent with no hidden fees. On rare occasions, a customs fee can be applied by the carrier based on U.S. regulations, and they would contact you directly about that.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "pricing_currencies",
+    "question_variants": [
+      "Do you offer pricing in different currencies?",
+      "Can I pay in Euros?",
+      "Can I see the price in USD?"
+    ],
+    "short_answer_voice": "Yes, our website automatically displays prices in your local currency, whether it's US Dollars, Euros, or others.",
+    "short_answer_text": "Yes. Our website automatically displays prices in your local currency, including USD, EUR, TRY, and more, depending on your location.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_free_to_usa",
+    "question_variants": [
+      "Is shipping to the USA free?",
+      "Do you offer free shipping to America?"
+    ],
+    "short_answer_voice": "Yes, for tent orders, shipping to the United States is free.",
+    "short_answer_text": "Yes — shipping to the US is *free* on tent orders.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_courier_choice",
+    "question_variants": [
+      "Can I choose the courier service?",
+      "Can I pick the shipping company?",
+      "Who do you ship with?"
+    ],
+    "short_answer_voice": "No, you cannot choose the specific courier. However, we partner with reliable carriers like FedEx, DHL, and UPS to ensure safe delivery.",
+    "short_answer_text": "No, courier selection is managed by us to ensure efficiency. We partner with reliable carriers like *FedEx* and *DHL* for international shipments and *UPS* for U.S. deliveries.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_international_availability",
+    "question_variants": [
+      "Is international shipping available?",
+      "Do you ship outside the US?",
+      "Can you ship to my country?"
+    ],
+    "short_answer_voice": "Yes, we ship to over 100 countries worldwide.",
+    "short_answer_text": "Yes — we ship to over 100 countries worldwide.",
+    "follow_up_prompt": "Would you like me to check if we ship to a specific country?",
+    "quick_replies": [
+      "Check my country"
+    ]
+  },
+  {
+    "intent_name": "shipping_tracking_info",
+    "question_variants": [
+      "Do you provide tracking information?",
+      "Can I track my order?",
+      "Will I get a tracking number?"
+    ],
+    "short_answer_voice": "Yes, you will receive a tracking number as soon as your order has been shipped.",
+    "short_answer_text": "Yes — you'll receive a tracking number as soon as your order ships.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_packaging",
+    "question_variants": [
+      "How is the tent packaged?",
+      "How does it ship?",
+      "Will it be safe during delivery?"
+    ],
+    "short_answer_voice": "The tent is packed in its own carry bag, which is then placed inside sturdy, protective packaging to ensure it arrives safely.",
+    "short_answer_text": "Each tent is packed in its own carry bag, then placed inside protective packaging to ensure safe delivery.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_issue_lost_delayed",
+    "question_variants": [
+      "What if my package is delayed or lost?",
+      "My order hasn't arrived, what do I do?",
+      "What if there's a problem with shipping?"
+    ],
+    "short_answer_voice": "If your package is delayed or lost, please contact us immediately through our website or by phone, and we will work with the courier to resolve it.",
+    "short_answer_text": "Please contact us immediately through our website or by phone. We’ll work with the courier to resolve the issue quickly.",
+    "follow_up_prompt": "Would you like our contact information?",
+    "quick_replies": [
+      "Yes, give me contact info"
+    ]
+  },
+  {
+    "intent_name": "shipping_po_box_military",
+    "question_variants": [
+      "Do you ship to PO boxes?",
+      "Can you ship to military addresses?",
+      "Do you ship to APO or FPO addresses?"
+    ],
+    "short_answer_voice": "Yes, we can ship to both P.O. boxes and military APO or FPO addresses.",
+    "short_answer_text": "Yes — we can ship to PO boxes and APO/FPO military addresses.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_exclusions",
+    "question_variants": [
+      "What countries do you not ship to?",
+      "Is there anywhere you don't ship?"
+    ],
+    "short_answer_voice": "We currently ship to over 100 countries. If you find your country is not available at checkout, please contact us for possible options.",
+    "short_answer_text": "We currently ship to over 100 countries. If your country is not available at checkout, please contact us for options.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "usage_folding_instructions",
+    "question_variants": [
+      "How do I fold the inflatable tent?",
+      "How do I pack up the tent?",
+      "What is the process for folding the tent?"
+    ],
+    "short_answer_voice": "To fold the tent, you first open the valve to let the air out, then fold the sides inward, and roll it up tightly from the end opposite the valves.",
+    "short_answer_text": "To fold the tent, you'll need to fully deflate it, fold the sides in, and then roll it up tightly. It's a simple process.",
+    "follow_up_prompt": "Would you like me to walk you through the detailed step-by-step instructions?",
+    "quick_replies": [
+      "Yes, give me the steps"
+    ],
+    "detailed_info": "1. Ensure no sharp objects are inside or under the tent. \n2. Remove stakes, guy ropes, and poles; place in their bags. \n3. Open the valve and press the safety lock to open it. \n4. The tent will deflate automatically; use the pump to release any remaining air. \n5. Fold compartments inward, then fold the tent from the side opposite the valves. \n6. Roll it up, secure with a rope, and store in the carry bag."
+  },
+  {
+    "intent_name": "usage_deflation_over_time",
+    "question_variants": [
+      "Do inflatable tents deflate over time?",
+      "Will the tent lose air?",
+      "Does it stay inflated?"
+    ],
+    "short_answer_voice": "No, if the valves are properly sealed, the tents do not deflate on their own. We do recommend checking the air pressure on long trips to ensure optimal performance.",
+    "short_answer_text": "Inflatable tents do not deflate on their own if properly inflated and sealed. Always ensure the valves are tightly closed after inflation. We recommend checking the air pressure regularly on long trips to maintain performance.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "usage_storage_instructions",
+    "question_variants": [
+      "How should I store my inflatable tent?",
+      "What's the best way to store the tent for winter?"
+    ],
+    "short_answer_voice": "You should always store the tent completely clean and dry, in a location with a stable temperature between 50 and 77 degrees Fahrenheit.",
+    "short_answer_text": "Store it in a dry environment, away from moisture, at a temperature between 10–25°C (50–77°F). For long-term storage, it helps to inflate it for 24 hours occasionally to preserve its shape.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "usage_maintenance_instructions",
+    "question_variants": [
+      "How do I maintain the inflatable tent?",
+      "How do I clean the tent?"
+    ],
+    "short_answer_voice": "For maintenance, you should avoid solvent-based chemicals, clean the tent gently before storing, and always make sure it's completely dry.",
+    "short_answer_text": "Key maintenance steps are: \n• Avoid solvent-based chemicals. \n• Clean it gently before storing. \n• Always store in a dry location. \n• Make sure the tent is fully dry before packing by inflating it while it dries.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "usage_keeping_warm",
+    "question_variants": [
+      "How do I keep warm in an inflatable tent?",
+      "How do I heat the tent in winter?"
+    ],
+    "short_answer_voice": "To stay warm, you can use the built-in, heat-resistant chimney outlet, which is designed to work with most standard camping stoves.",
+    "short_answer_text": "Use the built-in “chimney outlet” designed for winter conditions. It's heat- and flame-resistant and works with most camping stoves.",
+    "follow_up_prompt": "Would you like tips for using a stove safely?",
+    "quick_replies": [
+      "Stove safety tips"
+    ]
+  },
+  {
+    "intent_name": "usage_first_time_tips",
+    "question_variants": [
+      "What are your suggestions for first-time users?",
+      "Any tips for my first time using the tent?"
+    ],
+    "short_answer_voice": "For first-time users, we suggest choosing flat ground, ventilating the tent well, and checking the air pressure after a couple of days.",
+    "short_answer_text": "For first-time users, our key suggestions are: choose flat ground, ensure good ventilation, and check the air pressure after a couple of days. If you're using a stove, be sure to follow all safety guidelines.",
+    "follow_up_prompt": "I have a full list of tips for first-time users. Would you like to hear them?",
+    "quick_replies": [
+      "Yes, give me all the tips"
+    ],
+    "detailed_info": "1. Ventilate well. \n2. Choose flat ground, free of sharp objects. \n3. Bring all included accessories. \n4. Check air pressure after 48–72 hours. \n5. If using a stove, raise it 20–25cm from the ground. \n6. Use a fireproof mat under the stove. \n7. Use your tent responsibly and respect nature."
+  },
+  {
+    "intent_name": "usage_setup_instructions",
+    "question_variants": [
+      "How do I set up the inflatable tent?",
+      "What are the setup steps?"
+    ],
+    "short_answer_voice": "To set up the tent, you lay it flat, attach the pump to the valve, inflate it to the recommended pressure, and then secure it with stakes and guy ropes.",
+    "short_answer_text": "Setup is simple: Lay the tent flat, attach the pump to the valve, inflate it, and then secure it with stakes and guy ropes.",
+    "follow_up_prompt": "Would you like the detailed, step-by-step instructions?",
+    "quick_replies": [
+      "Yes, give me the steps"
+    ],
+    "detailed_info": "1. Lay down your ground mat. \n2. Place the tent flat. \n3. Open the valve and unlock the internal valve lock. \n4. Attach the pump and inflate to 0.6–0.8 Bar (0.9–0.12 PSI). \n5. Secure with stakes and guy ropes. \n6. Set up canopies or other accessories."
+  },
+  {
+    "intent_name": "accessories_buy_spares",
+    "question_variants": [
+      "Can I buy spare pegs and guylines?",
+      "Do you sell replacement parts?"
+    ],
+    "short_answer_voice": "Yes, spare metal pegs and reflective guylines are available to purchase individually from our store.",
+    "short_answer_text": "Yes, spare metal pegs and reflective guylines are available for individual purchase.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "accessories_bundles",
+    "question_variants": [
+      "Can I get a bundle of accessories at a discount?",
+      "Do you have accessory packages?"
+    ],
+    "short_answer_voice": "We do not currently offer pre-packaged accessory bundles at a discount, but you are welcome to mix and match any items you need.",
+    "short_answer_text": "We currently don't offer discounted bundles, but you're welcome to mix and match accessories from our catalog.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "accessories_organizers",
+    "question_variants": [
+      "Do you offer organizers or internal storage systems?",
+      "Can I get storage pockets for the tent?"
+    ],
+    "short_answer_voice": "Yes, we offer tent organizers and hanging storage systems as optional accessories for many of our models.",
+    "short_answer_text": "Yes, we offer tent organizers and hanging storage systems as optional accessories for many models.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "accessories_color_matching",
+    "question_variants": [
+      "Can I order color-matched accessories?",
+      "Do the accessories come in the same color as the tent?"
+    ],
+    "short_answer_voice": "We offer some accessories in various colors, but an exact color-match to your tent is not guaranteed.",
+    "short_answer_text": "We offer some accessories in various colors, but exact color-matching with your tent is not guaranteed.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "accessories_pump_type",
+    "question_variants": [
+      "Are your pumps manual or electric?",
+      "What kind of pump comes with the tent?"
+    ],
+    "short_answer_voice": "We include a manual hand pump with every tent. However, most models are also compatible with electric pumps if you prefer to use one.",
+    "short_answer_text": "We include manual hand pumps with every tent. Electric pump compatibility is available for most models.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "accessories_winter_camping",
+    "question_variants": [
+      "What are the most recommended accessories for winter camping?",
+      "What do I need for cold weather camping?"
+    ],
+    "short_answer_voice": "For winter camping, we highly recommend getting a fireproof stove mat, a diesel heater outlet, extra floor insulation, and reinforced guylines for wind.",
+    "short_answer_text": "For winter conditions, we recommend the *fireproof stove mat*, the *diesel heater outlet*, *extra floor insulation*, and reinforced *guylines* for added wind protection.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "customization_connect_tents",
+    "question_variants": [
+      "Can I connect two tents together?",
+      "Do you have connecting tunnels?"
+    ],
+    "short_answer_voice": "Yes, upon request, we can provide connecting tunnel solutions to join tents together.",
+    "short_answer_text": "Yes, we offer connecting tunnel solutions and modular decontamination tents upon request.",
+    "follow_up_prompt": "Would you like to inquire about a custom connecting solution?",
+    "quick_replies": [
+      "Contact about connecting tents"
+    ]
+  },
+  {
+    "intent_name": "customization_color",
+    "question_variants": [
+      "Can I customize the color of my tent?",
+      "Can I get a different color tent?"
+    ],
+    "short_answer_voice": "Yes, some of our models are available in optional colors like Desert Camo. Custom color requests may also be possible for bulk orders.",
+    "short_answer_text": "Yes, select models are available in optional colors like *Desert Camo*, and custom color requests may be available for bulk orders.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "accessories_third_party_pump",
+    "question_variants": [
+      "Can I use a hand pump purchased elsewhere?",
+      "Will another brand's pump work?"
+    ],
+    "short_answer_voice": "Yes, most likely. The valve on our tents is standardized, so most compatible hand pumps will work just fine.",
+    "short_answer_text": "Yes. The valve is standardized, so most compatible hand pumps will work.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_weekend_delivery",
+    "question_variants": [
+      "Is weekend delivery available?",
+      "Can you deliver on a Saturday?"
+    ],
+    "short_answer_voice": "Weekend delivery may be possible, but it depends entirely on the local courier service in your specific area.",
+    "short_answer_text": "Weekend delivery may be available, depending on your location and the courier service used.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_time_to_usa",
+    "question_variants": [
+      "How long does shipping take to the United States?",
+      "What is the US shipping time?"
+    ],
+    "short_answer_voice": "Shipping to the U.S. typically takes about 10 to 15 business days. If the tent is already in a US warehouse, it could be as fast as a week.",
+    "short_answer_text": "Shipping to the U.S. typically takes *10–15 business days*. In some cases, if the tent is already in stock in the US, it may be shipped within a week.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_express_delivery",
+    "question_variants": [
+      "Is express or same-day delivery available?",
+      "Can I get faster shipping?"
+    ],
+    "short_answer_voice": "We do not offer guaranteed express shipping, but for urgent cases, you can email our team to ask about immediate shipping options before you order.",
+    "short_answer_text": "For urgent cases, you can contact our team via email to ask about immediate shipping options. If the product is available, we’ll do our best to accommodate, but express shipping is not guaranteed and must be confirmed in advance.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_schedule_delivery",
+    "question_variants": [
+      "Can I schedule a delivery time or date?",
+      "Can I pick my delivery day?"
+    ],
+    "short_answer_voice": "Yes, you can. Right after placing your order, just contact our team via email to request a specific delivery date, and we'll do our best to arrange it.",
+    "short_answer_text": "Yes, absolutely. Right after placing your order, simply contact our team via email to request a specific delivery time or date, and we’ll do our best to arrange it with the courier.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "shipping_missed_delivery",
+    "question_variants": [
+      "What happens if I miss the delivery attempt?",
+      "What if I'm not home for delivery?"
+    ],
+    "short_answer_voice": "If you miss a delivery attempt, you should contact the courier service directly to reschedule or arrange to pick it up from their nearest location.",
+    "short_answer_text": "Please contact the courier service directly to reschedule delivery or arrange a pickup at the nearest location.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_how_to_order",
+    "question_variants": [
+      "How do I place an order?",
+      "How can I buy a tent?"
+    ],
+    "short_answer_voice": "To place an order, you can visit our website, choose your product, fill out the required information, and complete the payment.",
+    "short_answer_text": "Visit our website, choose your product, fill out the required info, and make your payment. We offer fast shipping throughout Türkiye.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_how_to_reach_you",
+    "question_variants": [
+      "How can I reach you?",
+      "How do I contact you?"
+    ],
+    "short_answer_voice": "You can easily contact us by using the contact form on our website or by sending us an email.",
+    "short_answer_text": "You can contact us via the form on our website or email. We welcome all questions, requests, or feedback.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "product_materials",
+    "question_variants": [
+      "What materials do you use?",
+      "What are the tents made of?",
+      "Tell me about the fabric."
+    ],
+    "short_answer_voice": "Our tents are made from UV-resistant, waterproof, and anti-microbial fabrics, with a high-strength PVC groundsheet.",
+    "short_answer_text": "Our tents use UV-resistant, waterproof, and anti-microbial fabrics. The outer surface is *UV 80 rated*, seams are *fully taped*, and the groundsheet is made from high-strength PVC.",
+    "follow_up_prompt": "Would you like to know more about our waterproof rating or other material specs?",
+    "quick_replies": [
+      "Waterproofing Info",
+      "Other Specs"
+    ]
+  },
+  {
+    "intent_name": "product_waterproof",
+    "question_variants": [
+      "Are your tents waterproof?",
+      "Do the tents leak?",
+      "How do they handle rain?"
+    ],
+    "short_answer_voice": "Yes, our tents are 100 percent waterproof. We use acrylic-coated fabric, fully taped seams, and an extra rain cover to ensure it.",
+    "short_answer_text": "Yes. We use 100% waterproof acrylic-coated fabric, fully taped seams, and an extra rain cover. The tents are tested for wind, rain, and snow resistance.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "product_weather_suitability",
+    "question_variants": [
+      "What weather conditions are your tents suitable for?",
+      "Are these 4-season tents?",
+      "Can they handle snow?"
+    ],
+    "short_answer_voice": "Our tents are true 4-season tents, fully tested to handle harsh outdoor environments, including strong wind, rain, and snow.",
+    "short_answer_text": "Our tents are made for *4-season use* and are fully tested for wind, rain, and snow. They are perfect for harsh outdoor environments.",
+    "follow_up_prompt": "Would you like to hear about our specific wind or cold resistance ratings?",
+    "quick_replies": [
+      "Wind Resistance",
+      "Cold Resistance"
+    ]
+  },
+  {
+    "intent_name": "product_inflation_pressure",
+    "question_variants": [
+      "What’s the recommended inflation pressure?",
+      "How much air should I put in?",
+      "What PSI should the tent be?"
+    ],
+    "short_answer_voice": "We recommend inflating the tent to a pressure between point six and point eight Bar, or about one PSI. It's important not to over-inflate the structure.",
+    "short_answer_text": "We recommend inflating your tent to a pressure between *0.6 Bar (0.9 PSI)* and *0.8 Bar (1.2 PSI)*. Always check the valve lock before inflation and avoid over-inflating to protect the structure.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "usage_stove_inside",
+    "question_variants": [
+      "Can I use a stove inside the inflatable tent?",
+      "Is it safe to use a stove inside?",
+      "Do the tents have a stove jack?"
+    ],
+    "short_answer_voice": "Yes, you can. Our tents have an integrated chimney outlet that is compatible with most standard camping stoves.",
+    "short_answer_text": "Yes. The integrated chimney outlet is compatible with most stoves (11 cm pipe diameter) and protects against snow/rain entry. Always use a heat board or fireproof mat underneath for safety.",
+    "follow_up_prompt": "Would you like our recommendations for winter camping accessories?",
+    "quick_replies": [
+      "Winter Accessories"
+    ]
+  },
+  {
+    "intent_name": "customization_modular_setup",
+    "question_variants": [
+      "Do you offer modular tent setups?",
+      "Can the tents be connected in a modular way?"
+    ],
+    "short_answer_voice": "Yes, we offer modular tent systems that are specifically designed for professional uses like field hospitals and emergency response.",
+    "short_answer_text": "Yes. We offer modular tent systems designed for professional applications such as field hospitals, decontamination units, and emergency response setups.",
+    "follow_up_prompt": "Would you like to know more about connecting tents together?",
+    "quick_replies": [
+      "Connecting Tents"
+    ]
+  },
+  {
+    "intent_name": "customization_stove_compatibility",
+    "question_variants": [
+      "Are your tents compatible with wood stoves from other brands?",
+      "Can I use my own stove?"
+    ],
+    "short_answer_voice": "Yes, as long as your stove is compatible with our 11-centimeter chimney outlet and meets safety standards, it can be used.",
+    "short_answer_text": "Yes — as long as the stove is compatible with our chimney outlet size (11 cm) and meets standard camping stove safety requirements, it can be safely used.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "customization_movie_screen",
+    "question_variants": [
+      "Are your tents compatible with inflatable movie screens?",
+      "Can I attach a movie screen to the tent?"
+    ],
+    "short_answer_voice": "While our tents can certainly be used alongside a movie screen, they aren't designed to have a screen directly mounted to them.",
+    "short_answer_text": "Our tents can be used alongside inflatable movie screens in open-field setups, but they are not designed to integrate or mount them directly. For specific compatibility or custom solutions, please email us at `info@sonmezoutdoor.com`.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "customization_extensions",
+    "question_variants": [
+      "Can I buy extension rooms or vestibules for your tents?",
+      "Do you sell add-on rooms?"
+    ],
+    "short_answer_voice": "At this time, we do not offer fixed extension rooms or vestibules as standard accessories. For custom modular setups, you can contact our team.",
+    "short_answer_text": "At this time, we do not offer fixed extension rooms or vestibules as standard accessories. For custom configurations or modular setups, please contact us at `info@sonmezoutdoor.com`.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "customization_solar_power",
+    "question_variants": [
+      "Do your tents support solar lighting or power ports?",
+      "Can I run power to the tent?"
+    ],
+    "short_answer_voice": "Our tents don't include built-in power ports, but they are fully compatible with third-party solar lighting kits and power packs, which many of our customers use.",
+    "short_answer_text": "Our tents do not include built-in power ports, but the interior structure and materials are compatible with third-party solar lighting kits and power solutions. Many users install solar lights or USB power packs inside without issues.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "customization_film_events",
+    "question_variants": [
+      "Can you create custom tents for film or event productions?",
+      "Can I get a custom tent for an event?"
+    ],
+    "short_answer_voice": "Yes, we offer custom manufacturing services for film productions and other special events. You can email your project details to our team to get a quote.",
+    "short_answer_text": "Yes. We offer custom manufacturing services for film productions, special events, and professional use cases. Please email your project details to `info@sonmezoutdoor.com` to start a custom quote.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "customization_modify_layout",
+    "question_variants": [
+      "Can you increase the ceiling height or modify the floorplan?",
+      "Can I get a custom layout?"
+    ],
+    "short_answer_voice": "Depending on the model and the size of the order, some customization of the ceiling height or layout may be possible. Please contact our team with your specs.",
+    "short_answer_text": "Some models can be customized for ceiling height or layout depending on the use case and order size. Please contact us at `info@sonmezoutdoor.com` with your specifications, and our engineering team will advise on feasibility.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "warranty_period",
+    "question_variants": [
+      "What is the warranty period?",
+      "What's the warranty on a tent?",
+      "Is there a warranty?"
+    ],
+    "short_answer_voice": "Our products are covered by a 2-year warranty against any material and manufacturing defects.",
+    "short_answer_text": "Our products are covered by a *2-year warranty* against material and manufacturing defects. Damage from misuse or normal wear and tear is not covered.",
+    "follow_up_prompt": "Would you like to know about our return policy?",
+    "quick_replies": [
+      "Tell me about returns"
+    ]
+  },
+  {
+    "intent_name": "returns_policy_inquiry",
+    "question_variants": [
+      "What is your return policy?",
+      "Can I return a tent?"
+    ],
+    "short_answer_voice": "For full details on our return policy or to start a return, please contact our support team by emailing info@sonmezoutdoor.com.",
+    "short_answer_text": "To initiate a return or get full policy details, please contact our support team by emailing `info@sonmezoutdoor.com`.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "returns_cancel_modify_order",
+    "question_variants": [
+      "Can I cancel or modify my order after payment?",
+      "Can I change my order?"
+    ],
+    "short_answer_voice": "It may be possible to modify or cancel an order before it enters production or ships. Please contact us as soon as possible to see if changes can be made.",
+    "short_answer_text": "Orders can be modified or canceled before production or shipping begins. Please contact us as soon as possible via `info@sonmezoutdoor.com` to check if changes are still possible.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "returns_refund_policy",
+    "question_variants": [
+      "Do you offer refunds if I’m not satisfied?",
+      "Can I get my money back?"
+    ],
+    "short_answer_voice": "Yes, refunds are available for eligible returns that are in line with our return policy. Please contact our support team for assistance.",
+    "short_answer_text": "Refunds are available for eligible returns in line with our return policy. Contact `info@sonmezoutdoor.com` for assistance with your case.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "returns_replacement_parts",
+    "question_variants": [
+      "Can I get a replacement part if something arrives broken?",
+      "What if my tent is damaged in shipping?"
+    ],
+    "short_answer_voice": "Yes, absolutely. If any part arrives damaged, contact us with your order number and a photo of the issue, and we will provide a free replacement.",
+    "short_answer_text": "Yes. If a part arrives damaged, we will provide a free replacement. Email us at `info@sonmezoutdoor.com` with your order number and photos of the issue.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_contact_methods",
+    "question_variants": [
+      "How can I contact customer service?",
+      "What's the best way to reach you?"
+    ],
+    "short_answer_voice": "You can reach us through the contact form on our website, or by email. For quick questions, we also have WhatsApp support.",
+    "short_answer_text": "You can reach us via the contact form on our website, or by email.",
+    "follow_up_prompt": "Would you like our email address?",
+    "quick_replies": [
+      "Email Address: info@sonmezoutdoor.com"
+    ]
+  },
+  {
+    "intent_name": "support_speak_to_sales",
+    "question_variants": [
+      "Can I speak with a sales representative before placing an order?",
+      "Can I talk to a person about buying a tent?"
+    ],
+    "short_answer_voice": "Yes, you can. Feel free to call us directly to speak with a sales representative.",
+    "short_answer_text": "Yes. Feel free to contact us through the website or call us directly at `+1 908-4-766639` to speak with a sales representative.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_email_response_time",
+    "question_variants": [
+      "How quickly do you respond to support emails?",
+      "How long until I get an email back?"
+    ],
+    "short_answer_voice": "We aim to respond to all emails as quickly as possible, which is usually within the same business day.",
+    "short_answer_text": "We aim to respond as quickly as possible — usually within the same business day.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_live_chat",
+    "question_variants": [
+      "Is there a live chat or WhatsApp support available?",
+      "Can I chat with someone?"
+    ],
+    "short_answer_voice": "Yes, we offer live support through WhatsApp. You can find the link on our website.",
+    "short_answer_text": "Yes. We offer WhatsApp support through our website for quick and convenient assistance.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_choosing_tent",
+    "question_variants": [
+      "Can I get help choosing the best tent for my needs?",
+      "Can you help me pick a tent?"
+    ],
+    "short_answer_voice": "Absolutely. Our team is happy to help you choose the right tent based on your specific needs and how you plan to use it.",
+    "short_answer_text": "Absolutely! Our team will gladly help you choose the ideal tent based on your needs, location, and usage type.",
+    "follow_up_prompt": "Would you like to connect with our support team now?",
+    "quick_replies": [
+      "Yes, connect me"
+    ]
+  },
+  {
+    "intent_name": "support_priority_professional",
+    "question_variants": [
+      "Do you offer priority support for professional clients?",
+      "Do business customers get priority support?"
+    ],
+    "short_answer_voice": "Yes, we provide dedicated support for all of our professional, institutional, and bulk order clients.",
+    "short_answer_text": "Yes. We provide dedicated support for professional clients, including bulk orders, institutional buyers, and government agencies.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_loyalty_program",
+    "question_variants": [
+      "Is there a loyalty or referral program?",
+      "Do you have a rewards program?"
+    ],
+    "short_answer_voice": "No, we do not currently offer a loyalty or referral program.",
+    "short_answer_text": "Not at the moment — we currently do not offer a loyalty or referral program.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_manual_languages",
+    "question_variants": [
+      "Do you provide instructions in multiple languages?",
+      "Can I get a manual in Spanish?"
+    ],
+    "short_answer_voice": "Currently, our user manuals are available in English and Turkish. For other languages, please contact our team to ask about availability.",
+    "short_answer_text": "Yes. User manuals are available in English and Turkish. For other languages, please contact our team to request availability.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  },
+  {
+    "intent_name": "support_download_manuals",
+    "question_variants": [
+      "Where can I download product manuals?",
+      "Can I get a PDF of the manual?"
+    ],
+    "short_answer_voice": "Right now, product manuals are included with the tent shipment. For a digital copy, please email our support team and they can provide one.",
+    "short_answer_text": "Product manuals are currently included with each tent shipment. For digital copies or specific model requests, please email us at `info@sonmezoutdoor.com`.",
+    "follow_up_prompt": null,
+    "quick_replies": []
+  }
+]

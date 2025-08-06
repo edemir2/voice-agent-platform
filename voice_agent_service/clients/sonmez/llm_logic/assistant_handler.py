@@ -1,53 +1,81 @@
 import os
-from openai import OpenAI
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain_pinecone import PineconeVectorStore
+from langchain.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
 
-def build_prompt_and_context(user_input, mentioned_product, product_list):
-    if mentioned_product:
-        # Expert mode
-        system_prompt = (
-            "You are a product expert. A customer is asking about a specific product. "
-            "Using only the detailed information provided, answer their question naturally and concisely. "
-            "If the answer isn't in the details, say you don't have that specific information."
-        )
+def format_retrieved_docs(docs):
+    """
+    Formats the output of the retriever into a single string.
+    """
+    return "\n\n".join(doc.page_content for doc in docs)
 
-        keywords_to_find = ["Fabric:", "Cold Resistance:", "High Temperature:",
-                            "Sun Protection Factor:", "Wind Resistance:", "Dimensions:"]
-        details_to_include = [
-            f"- {d.strip()}" for d in mentioned_product.get("material_details", [])
-            if any(k in d for k in keywords_to_find)
-        ]
+def run_rag_assistant(user_input, history):
+    """
+    Handles a user query using a corrected and robust RAG pipeline.
+    """
+    # 1. Set up the connection to your Pinecone vector store
+    vectorstore = PineconeVectorStore.from_existing_index(
+        index_name="sonmez-products",
+        embedding=OpenAIEmbeddings(model="text-embedding-3-small")
+    )
+    retriever = vectorstore.as_retriever()
 
-        context = (
-            f"Answering questions about: {mentioned_product['name']}\n"
-            "Key Details:\n" + "\n".join(details_to_include)
-        ) if details_to_include else "No specific material details available."
+    # 2. Define the prompt template
+    template = """
+    You are a friendly and conversational product expert for Sönmez Outdoor. Your role is to be precise and factual.
+    1. If the user is just starting and says "hello" or nothing, greet them warmly and ask how you can help with our tent models.
+    2. For all other questions, answer using ONLY the data provided in the 'Context' section.
+    3. Report the data EXACTLY as it is written. Do NOT convert units (e.g., °F to °C) or change any values.
+    4. If the information is not in the context, politely state that you do not have that specific information.
 
-    else:
-        # Friendly general responder
-        system_prompt = (
-            "You are a friendly greeter for Sönmez Outdoor. You can answer general questions or list the available products. "
-            "Keep your answers brief and encourage the user to ask about a specific model."
-        )
-        product_names = [product['name'] for product in product_list]
-        context = "The available tent models are: " + ", ".join(product_names) + "."
+    Context:
+    {context}
 
-    return system_prompt, context
+    Conversation History:
+    {history}
 
+    User Question: {question}
 
-def run_assistant(user_input, mentioned_product, product_list):
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))  # ✅ Delayed until .env is loaded
+    Answer:
+    """
+    prompt = PromptTemplate.from_template(template)
 
-    system_prompt, context = build_prompt_and_context(user_input, mentioned_product, product_list)
+    # 3. Set up the LLM
+    llm = ChatOpenAI(model_name="gpt-4o-mini", temperature=0)
 
-    messages = [
-        {"role": "system", "content": system_prompt},
-        {"role": "system", "content": context},
-        {"role": "user", "content": user_input}
-    ]
-
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=messages
+    # 4. Correctly construct the RAG chain
+    rag_chain = (
+        {
+            "context": lambda x: format_retrieved_docs(retriever.invoke(x["question"])),
+            "question": lambda x: x["question"],
+            "history": lambda x: x["history"],
+        }
+        | prompt
+        | llm
+        | StrOutputParser()
     )
 
-    return response.choices[0].message.content.strip() if response else "I'm having trouble responding right now."
+    # Format the history for the prompt
+    formatted_history = "\n".join([f"{msg['role']}: {msg['content']}" for msg in history])
+
+    # 5. Invoke the chain with a single dictionary containing all necessary keys
+    answer = rag_chain.invoke({
+        "question": user_input,
+        "history": formatted_history
+    })
+
+    # Format the history for the prompt
+    formatted_history = "\n".join([f"{msg['role']}: {msg['content']}" for msg in history])
+
+    # 5. Invoke the chain with a single dictionary containing all necessary keys
+    answer = rag_chain.invoke({
+        "question": user_input,
+        "history": formatted_history
+    })
+    
+    # Update history for the next turn
+    history.append({"role": "user", "content": user_input})
+    history.append({"role": "assistant", "content": answer})
+    
+    return answer
