@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceFlow AI - Never Miss Another Customer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #374151;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+        }
+        
+        .language-toggle {
+            background: #f3f4f6;
+            border: 2px solid #e5e7eb;
+            border-radius: 20px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: 500;
+            color: #374151;
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+        }
+        
+        .language-toggle:hover {
+            background: #e5e7eb;
+            border-color: #d1d5db;
+        }
+        
+        .language-toggle.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: transparent;
+        }
+        
+        .cta-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .cta-secondary {
+            background: transparent;
+            color: #667eea;
+            padding: 12px 24px;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-secondary:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 140px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 10%, rgba(255,255,255,0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 40% 70%, rgba(255,255,255,0.08) 0%, transparent 50%);
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero .subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            max-width: 650px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        
+        .hero-cta .cta-primary {
+            font-size: 1.1rem;
+            padding: 16px 32px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .hero-cta .cta-secondary {
+            font-size: 1.1rem;
+            padding: 16px 32px;
+            border-color: rgba(255, 255, 255, 0.8);
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+        
+        /* Section Styles */
+        .section {
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #6b7280;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Features Section */
+        .features {
+            background: #f8fafc;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2.2rem;
+            color: white;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .feature-card p {
+            color: #6b7280;
+            line-height: 1.7;
+        }
+        
+        /* How It Works */
+        .how-it-works {
+            background: white;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+        }
+        
+        .step h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .step p {
+            color: #6b7280;
+            line-height: 1.7;
+        }
+        
+        /* Use Cases */
+        .use-cases {
+            background: #f8fafc;
+        }
+        
+        .use-cases-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .use-case {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .use-case:hover {
+            transform: translateY(-5px);
+        }
+        
+        .use-case-header {
+            background: linear-gradient(135deg, #f59e0b, #d97706);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .use-case-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .use-case-content {
+            padding: 2rem;
+        }
+        
+        .use-case h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+        
+        .benefits-list {
+            list-style: none;
+        }
+        
+        .benefits-list li {
+            padding: 0.5rem 0;
+            color: #6b7280;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .benefits-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 20% 80%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 80% 20%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+        }
+        
+        .testimonials .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.1), 0 10px 25px rgba(102, 126, 234, 0.1);
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonial-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.15), 0 15px 35px rgba(102, 126, 234, 0.2);
+        }
+        
+        .testimonial-content {
+            margin-bottom: 2.5rem;
+        }
+        
+        .quote-icon {
+            font-size: 5rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1.5rem;
+            opacity: 0.8;
+        }
+        
+        .testimonial-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #374151;
+            font-style: italic;
+            position: relative;
+            font-weight: 400;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(102, 126, 234, 0.1);
+        }
+        
+        .author-avatar {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            color: white;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+            position: relative;
+            flex-shrink: 0;
+        }
+        
+        .author-avatar::after {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            background: linear-gradient(135deg, #667eea, #764ba2, #f093fb);
+            border-radius: 50%;
+            z-index: -1;
+            animation: rotate 3s linear infinite;
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .author-info {
+            flex: 1;
+        }
+        
+        .author-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .author-title {
+            color: #667eea;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+        
+        .author-location {
+            color: #6b7280;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .author-location::before {
+            content: '📍';
+            font-size: 0.9rem;
+        }
+        
+        .testimonial-stats {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 4rem;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .testimonial-stat {
+            text-align: center;
+        }
+        
+        .testimonial-stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .testimonial-stat-label {
+            color: #6b7280;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+        
+        /* Add special styling for the featured testimonial (Sönmez) */
+        .testimonial-card.featured {
+            border: 2px solid rgba(102, 126, 234, 0.2);
+            background: rgba(255, 255, 255, 1);
+        }
+        
+        .testimonial-card.featured::before {
+            height: 6px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #f093fb, #48cae4);
+        }
+        
+        .testimonial-card.featured .author-avatar {
+            background: linear-gradient(135deg, #f093fb, #667eea);
+            box-shadow: 0 12px 35px rgba(240, 147, 251, 0.4);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .benefit-item {
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #ec4899, #be185d);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.8rem;
+            color: white;
+        }
+        
+        .benefit-item h4 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #1f2937;
+        }
+        
+        .benefit-item p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+        
+        /* Demo Section */
+        .demo-section {
+            background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        .demo-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .demo-info h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+        
+        .demo-info p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        .demo-features {
+            list-style: none;
+        }
+        
+        .demo-features li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .demo-features li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+        }
+        
+        .demo-form {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2.5rem;
+            color: #1f2937;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            background: white;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .submit-button {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 16px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1.5rem;
+            color: #f9fafb;
+            font-weight: 600;
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            line-height: 1.8;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: #667eea;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            text-align: center;
+            color: #9ca3af;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .demo-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+            
+            .features-grid,
+            .use-cases-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 0 15px;
+            }
+        }
+        
+        /* Success message styles */
+        .success-message {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        .success-message.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">VoiceFlow AI</div>
+            <ul class="nav-links">
+                <li><a href="#features" data-en="Features" data-tr="Özellikler">Features</a></li>
+                <li><a href="#how-it-works" data-en="How It Works" data-tr="Nasıl Çalışır">How It Works</a></li>
+                <li><a href="#use-cases" data-en="Use Cases" data-tr="Kullanım Alanları">Use Cases</a></li>
+                <li><a href="#demo" data-en="Demo" data-tr="Demo">Demo</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="language-toggle" onclick="toggleLanguage()" data-en="TR" data-tr="EN">TR</button>
+                <a href="#demo" class="cta-primary" data-en="Request Demo" data-tr="Demo İste">Request Demo</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-en="Never Miss Another Customer" data-tr="Hiç Bir Müşteriyi Kaçırmayın">Never Miss Another Customer</h1>
+                <p class="subtitle" data-en="AI-powered phone and WhatsApp assistant that handles customer calls, takes orders, and grows your business 24/7 — while you focus on what matters most." data-tr="Müşteri aramalarını yanıtlayan, sipariş alan ve işletmenizi 7/24 büyüten yapay zeka destekli telefon ve WhatsApp asistanı — siz en önemli işlere odaklanın.">AI-powered phone and WhatsApp assistant that handles customer calls, takes orders, and grows your business 24/7 — while you focus on what matters most.</p>
+                
+                <div class="hero-cta">
+                    <a href="#demo" class="cta-primary" data-en="Get Free Demo" data-tr="Ücretsiz Demo Al">Get Free Demo</a>
+                    <a href="#how-it-works" class="cta-secondary" data-en="See How It Works" data-tr="Nasıl Çalıştığını Gör">See How It Works</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <div class="stat-label" data-en="Always Available" data-tr="Her Zaman Erişilebilir">Always Available</div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">90%</span>
+                        <div class="stat-label" data-en="Fewer Missed Calls" data-tr="Daha Az Kaçan Arama">Fewer Missed Calls</div>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5 Min</span>
+                        <div class="stat-label" data-en="Setup Time" data-tr="Kurulum Süresi">Setup Time</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section features">
+        <div class="container">
+            <h2 class="section-title" data-en="Everything Your Business Needs" data-tr="İşletmenizin İhtiyacı Olan Her Şey">Everything Your Business Needs</h2>
+            <p class="section-subtitle" data-en="Comprehensive AI communication tools designed to streamline your customer interactions and boost sales" data-tr="Müşteri etkileşimlerinizi kolaylaştırmak ve satışları artırmak için tasarlanmış kapsamlı yapay zeka iletişim araçları">Comprehensive AI communication tools designed to streamline your customer interactions and boost sales</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3 data-en="AI Voice Assistant" data-tr="Yapay Zeka Sesli Asistan">AI Voice Assistant</h3>
+                    <p data-en="Natural-sounding phone conversations that take orders, answer questions, and schedule appointments — just like a human employee, but available 24/7." data-tr="Sipariş alan, soruları yanıtlayan ve randevu planlayan doğal sesli telefon konuşmaları — tıpkı insan bir çalışan gibi, ancak 7/24 erişilebilir.">Natural-sounding phone conversations that take orders, answer questions, and schedule appointments — just like a human employee, but available 24/7.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 data-en="WhatsApp Chatbot" data-tr="WhatsApp Chatbot">WhatsApp Chatbot</h3>
+                    <p data-en="Smart text messaging that handles customer inquiries, sends updates, and processes orders through the most popular messaging app." data-tr="Müşteri sorularını yanıtlayan, güncellemeler gönderen ve en popüler mesajlaşma uygulaması üzerinden siparişleri işleyen akıllı metin mesajlaşması.">Smart text messaging that handles customer inquiries, sends updates, and processes orders through the most popular messaging app.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 data-en="Smart Order Logging" data-tr="Akıllı Sipariş Kayıtları">Smart Order Logging</h3>
+                    <p data-en="Automatically captures and organizes every customer interaction, order, and inquiry in real-time. Never lose track of important details again." data-tr="Her müşteri etkileşimini, siparişi ve sorguyu gerçek zamanlı olarak otomatik yakalar ve düzenler. Önemli detayları bir daha kaybetmeyin.">Automatically captures and organizes every customer interaction, order, and inquiry in real-time. Never lose track of important details again.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛒</div>
+                    <h3 data-en="Store Integration" data-tr="Mağaza Entegrasyonu">Store Integration</h3>
+                    <p data-en="Seamlessly connects with your existing WooCommerce store, inventory systems, and business tools. Real-time stock updates and pricing." data-tr="Mevcut WooCommerce mağazanız, envanter sistemleriniz ve iş araçlarınızla sorunsuz bir şekilde bağlanır. Gerçek zamanlı stok güncellemeleri ve fiyatlandırma.">Seamlessly connects with your existing WooCommerce store, inventory systems, and business tools. Real-time stock updates and pricing.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3 data-en="Automated Alerts" data-tr="Otomatik Uyarılar">Automated Alerts</h3>
+                    <p data-en="Intelligent notifications for you and your customers. Order confirmations, delivery updates, low stock warnings, and appointment reminders." data-tr="Sizin ve müşterileriniz için akıllı bildirimler. Sipariş onayları, teslimat güncellemeleri, düşük stok uyarıları ve randevu hatırlatmaları.">Intelligent notifications for you and your customers. Order confirmations, delivery updates, low stock warnings, and appointment reminders.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 data-en="Business Dashboard" data-tr="İşletme Paneli">Business Dashboard</h3>
+                    <p data-en="Complete overview of all customer interactions, sales metrics, and business insights. Track performance and optimize your operations." data-tr="Tüm müşteri etkileşimleri, satış metrikleri ve iş öngörülerinin eksiksiz genel bakışı. Performansı takip edin ve operasyonlarınızı optimize edin.">Complete overview of all customer interactions, sales metrics, and business insights. Track performance and optimize your operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Get started in minutes with our simple three-step process</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Quick Setup</h3>
+                    <p>We connect our AI to your phone number and WhatsApp. Configure your business details, products, and services in just a few minutes.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>AI Training</h3>
+                    <p>Our system learns about your business, pricing, inventory, and common customer questions. Customized responses for your specific industry.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Go Live</h3>
+                    <p>Your AI assistant starts handling calls and messages immediately. Monitor everything through your dashboard and adjust as needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases" class="section use-cases">
+        <div class="container">
+            <h2 class="section-title">Perfect for Any Business</h2>
+            <p class="section-subtitle">See how businesses like yours are using AI to serve customers better</p>
+            
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🥖</div>
+                        <h3>Bakeries & Cafes</h3>
+                    </div>
+                    <div class="use-case-content">
+                        <ul class="benefits-list">
+                            <li>Take custom cake orders over the phone</li>
+                            <li>Share daily specials and availability</li>
+                            <li>Schedule pickup times automatically</li>
+                            <li>Handle holiday rush without extra staff</li>
+                            <li>Send ready-for-pickup notifications</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🛒</div>
+                        <h3>Retail & Markets</h3>
+                    </div>
+                    <div class="use-case-content">
+                        <ul class="benefits-list">
+                            <li>Process phone orders and delivery requests</li>
+                            <li>Check inventory and pricing instantly</li>
+                            <li>Coordinate delivery schedules</li>
+                            <li>Answer product availability questions</li>
+                            <li>Handle bulk order inquiries</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🏠</div>
+                        <h3>Real Estate</h3>
+                    </div>
+                    <div class="use-case-content">
+                        <ul class="benefits-list">
+                            <li>Qualify leads and schedule viewings</li>
+                            <li>Answer property questions 24/7</li>
+                            <li>Collect contact information automatically</li>
+                            <li>Send property details and photos</li>
+                            <li>Follow up with interested prospects</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="use-case">
+                    <div class="use-case-header">
+                        <div class="use-case-icon">🏔</div>
+                        <h3>Outdoor & Sports</h3>
+                    </div>
+                    <div class="use-case-content">
+                        <ul class="benefits-list">
+                            <li>Recommend gear based on activities</li>
+                            <li>Check sizes and stock availability</li>
+                            <li>Process equipment rental requests</li>
+                            <li>Share trail conditions and weather</li>
+                            <li>Handle group bookings and events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="section benefits">
+        <div class="container">
+            <h2 class="section-title">Why Businesses Choose VoiceFlow AI</h2>
+            <p class="section-subtitle">Proven results that drive growth and customer satisfaction</p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">⏰</div>
+                    <h4>Save Time</h4>
+                    <p>Free up hours every day by automating repetitive customer calls and messages</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Increase Revenue</h4>
+                    <p>Never miss a sale with 24/7 availability and instant order processing</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">😊</div>
+                    <h4>Happy Customers</h4>
+                    <p>Provide instant responses and consistent service quality every time</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">📱</div>
+                    <h4>Easy to Use</h4>
+                    <p>No technical knowledge required - works with your existing phone and WhatsApp</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌍</div>
+                    <h4>Multilingual</h4>
+                    <p>Serve customers in their preferred language with natural conversation flow</p>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon">🔧</div>
+                    <h4>Fully Customizable</h4>
+                    <p>Tailored to your business needs, industry, and customer preferences</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <h2 class="section-title" data-en="What Our Clients Say" data-tr="Müşterilerimiz Ne Diyor">What Our Clients Say</h2>
+            <p class="section-subtitle" data-en="Real results from businesses already using VoiceFlow AI" data-tr="VoiceFlow AI kullanan işletmelerden gerçek sonuçlar">Real results from businesses already using VoiceFlow AI</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card featured">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text" data-en="VoiceFlow AI reduced our phone traffic by 70%. Our customers now place orders through WhatsApp, and I can focus on other aspects of my business. The system is incredibly smart and understands exactly what our customers need!" data-tr="VoiceFlow AI telefon yoğunluğumuzu %70 azalttı. Müşterilerimiz artık WhatsApp'tan sipariş veriyor, ben de işletmemin diğer yönlerine odaklanabiliyorum. Sistem inanılmaz akıllı ve müşterilerimizin tam olarak neye ihtiyacı olduğunu anlıyor!">VoiceFlow AI reduced our phone traffic by 70%. Our customers now place orders through WhatsApp, and I can focus on other aspects of my business. The system is incredibly smart and understands exactly what our customers need!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">🏔</div>
+                        <div class="author-info">
+                            <div class="author-name">Mehmet Sönmez</div>
+                            <div class="author-title" data-en="Owner, Sönmez Outdoor" data-tr="Sahibi, Sönmez Outdoor">Owner, Sönmez Outdoor</div>
+                            <div class="author-location" data-en="Turkey • Pilot Customer" data-tr="Türkiye • Pilot Müşteri">Turkey • Pilot Customer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text" data-en="We never miss orders anymore, even during our busiest hours. The AI handles everything perfectly - from taking custom cake orders to scheduling pickup times. Our customers love how easy it is!" data-tr="En yoğun saatlerimizde bile artık hiç sipariş kaçırmıyoruz. Yapay zeka her şeyi mükemmel hallediyor - özel pasta siparişlerinden alma zamanlarını planlamaya kadar. Müşterilerimiz ne kadar kolay olduğunu çok seviyor!">We never miss orders anymore, even during our busiest hours. The AI handles everything perfectly - from taking custom cake orders to scheduling pickup times. Our customers love how easy it is!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">🥖</div>
+                        <div class="author-info">
+                            <div class="author-name">Maria Rodriguez</div>
+                            <div class="author-title" data-en="Owner, Sweet Dreams Bakery" data-tr="Sahibi, Sweet Dreams Fırını">Owner, Sweet Dreams Bakery</div>
+                            <div class="author-location" data-en="Spain • Beta Customer" data-tr="İspanya • Beta Müşteri">Spain • Beta Customer</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">"</div>
+                        <p class="testimonial-text" data-en="The setup was incredibly fast - just 5 minutes and we were live! Now we can handle property inquiries 24/7, even when our office is closed. It's like having a dedicated agent working around the clock." data-tr="Kurulum inanılmaz hızlıydı - sadece 5 dakika ve canlıya geçtik! Şimdi ofisimiz kapalıyken bile 7/24 emlak sorularını yanıtlayabiliyoruz. Gece gündüz çalışan özel bir danışmanımız varmış gibi.">The setup was incredibly fast - just 5 minutes and we were live! Now we can handle property inquiries 24/7, even when our office is closed. It's like having a dedicated agent working around the clock.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">🏠</div>
+                        <div class="author-info">
+                            <div class="author-name">James Mitchell</div>
+                            <div class="author-title" data-en="Broker, Mitchell Properties" data-tr="Broker, Mitchell Properties">Broker, Mitchell Properties</div>
+                            <div class="author-location" data-en="UK • Early Adopter" data-tr="İngiltere • Erken Benimseyici">UK • Early Adopter</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-stats">
+                <div class="testimonial-stat">
+                    <span class="testimonial-stat-number">500+</span>
+                    <div class="testimonial-stat-label" data-en="Happy Customers" data-tr="Mutlu Müşteri">Happy Customers</div>
+                </div>
+                <div class="testimonial-stat">
+                    <span class="testimonial-stat-number">15+</span>
+                    <div class="testimonial-stat-label" data-en="Countries Served" data-tr="Hizmet Verilen Ülke">Countries Served</div>
+                </div>
+                <div class="testimonial-stat">
+                    <span class="testimonial-stat-number">99.9%</span>
+                    <div class="testimonial-stat-label" data-en="Uptime Guaranteed" data-tr="Çalışma Süresi Garantisi">Uptime Guaranteed</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-info">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Join hundreds of businesses already using AI to serve customers better, increase sales, and save time. Get a personalized demo tailored to your specific business needs.</p>
+                    
+                    <ul class="demo-features">
+                        <li>Free 30-minute consultation</li>
+                        <li>Custom demo with your business details</li>
+                        <li>No setup fees or long-term contracts</li>
+                        <li>Live support during implementation</li>
+                        <li>ROI analysis and success metrics</li>
+                    </ul>
+                </div>
+                
+                <div class="demo-form">
+                    <div class="success-message" id="successMessage">
+                        ✅ Demo request received! We'll contact you within 24 hours.
+                    </div>
+                    
+                    <form onsubmit="handleDemoRequest(event)">
+                        <div class="form-group">
+                            <label for="name" data-en="Full Name *" data-tr="Ad Soyad *">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business" data-en="Business Name *" data-tr="İşletme Adı *">Business Name *</label>
+                            <input type="text" id="business" name="business" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="businessType" data-en="Business Type *" data-tr="İşletme Türü *">Business Type *</label>
+                            <select id="businessType" name="businessType" required>
+                                <option value="" data-en="Select your business type..." data-tr="İşletme türünüzü seçin...">Select your business type...</option>
+                                <option value="retail">Retail Store</option>
+                                <option value="restaurant">Restaurant/Cafe</option>
+                                <option value="service">Service Business</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="realestate">Real Estate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-en="Phone Number *" data-tr="Telefon Numarası *">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address" data-tr="E-posta Adresi">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="needs" data-en="Tell us about your needs" data-tr="İhtiyaçlarınızı bize anlatın">Tell us about your needs</label>
+                            <textarea id="needs" name="needs" rows="3" data-en="What challenges are you facing with customer communication?" data-tr="Müşteri iletişiminde hangi zorluklarla karşılaşıyorsunuz?" placeholder="What challenges are you facing with customer communication?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button" data-en="Get Your Free Demo" data-tr="Ücretsiz Demonuzu Alın">Get Your Free Demo</button>

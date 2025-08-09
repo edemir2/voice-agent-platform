@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block head %}
+  <link rel="stylesheet" href="{{ url_for('static', filename='join.css') }}">
+{% endblock %}
+
+{% block content %}
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-info">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Join hundreds of businesses already using AI to serve customers better, increase sales, and save time. Get a personalized demo tailored to your specific business needs.</p>
+                    
+                    <ul class="demo-features">
+                        <li>Free 30-minute consultation</li>
+                        <li>Custom demo with your business details</li>
+                        <li>No setup fees or long-term contracts</li>
+                        <li>Live support during implementation</li>
+                        <li>ROI analysis and success metrics</li>
+                    </ul>
+                </div>
+                
+                <div class="demo-form">
+                    {% if success_message %}
+                    <div class="success-message" id="successMessage">
+                        ✅ {{ success_message }}
+                    </div>
+                    {% endif %}
+                    
+                    {% if error_message %}
+                    <div class="error-message" id="errorMessage">
+                        ❌ {{ error_message }}
+                    </div>
+                    {% endif %}
+                    
+                    <form method="POST" action="{{ url_for('join') }}">
+                        <div class="form-group">
+                            <label for="full_name" data-en="Full Name *" data-tr="Ad Soyad *">Full Name *</label>
+                            <input type="text" id="full_name" name="full_name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business_name" data-en="Business Name *" data-tr="İşletme Adı *">Business Name *</label>
+                            <input type="text" id="business_name" name="business_name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business_type" data-en="Business Type *" data-tr="İşletme Türü *">Business Type *</label>
+                            <select id="business_type" name="business_type" required>
+                                <option value="" data-en="Select your business type..." data-tr="İşletme türünüzü seçin...">Select your business type...</option>
+                                <option value="Retail Store">Retail Store</option>
+                                <option value="Restaurant/Cafe">Restaurant/Cafe</option>
+                                <option value="Service Business">Service Business</option>
+                                <option value="Healthcare">Healthcare</option>
+                                <option value="Real Estate">Real Estate</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone_number" data-en="Phone Number" data-tr="Telefon Numarası">Phone Number</label>
+                            <input type="tel" id="phone_number" name="phone_number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address *" data-tr="E-posta Adresi *">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password" data-en="Password *" data-tr="Şifre *">Password *</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        
+                        <button type="submit" class="submit-button" data-en="Get Your Free Demo" data-tr="Ücretsiz Demonuzu Alın">Get Your Free Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+{% endblock %}

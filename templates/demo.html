@@ -1,0 +1,63 @@
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-info">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Join hundreds of businesses already using AI to serve customers better, increase sales, and save time. Get a personalized demo tailored to your specific business needs.</p>
+                    
+                    <ul class="demo-features">
+                        <li>Free 30-minute consultation</li>
+                        <li>Custom demo with your business details</li>
+                        <li>No setup fees or long-term contracts</li>
+                        <li>Live support during implementation</li>
+                        <li>ROI analysis and success metrics</li>
+                    </ul>
+                </div>
+                
+                <div class="demo-form">
+                    <div class="success-message" id="successMessage">
+                        ✅ Demo request received! We'll contact you within 24 hours.
+                    </div>
+                    
+                    <form onsubmit="handleDemoRequest(event)">
+                        <div class="form-group">
+                            <label for="name" data-en="Full Name *" data-tr="Ad Soyad *">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="business" data-en="Business Name *" data-tr="İşletme Adı *">Business Name *</label>
+                            <input type="text" id="business" name="business" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="businessType" data-en="Business Type *" data-tr="İşletme Türü *">Business Type *</label>
+                            <select id="businessType" name="businessType" required>
+                                <option value="" data-en="Select your business type..." data-tr="İşletme türünüzü seçin...">Select your business type...</option>
+                                <option value="retail">Retail Store</option>
+                                <option value="restaurant">Restaurant/Cafe</option>
+                                <option value="service">Service Business</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="realestate">Real Estate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" data-en="Phone Number *" data-tr="Telefon Numarası *">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" data-en="Email Address" data-tr="E-posta Adresi">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="needs" data-en="Tell us about your needs" data-tr="İhtiyaçlarınızı bize anlatın">Tell us about your needs</label>
+                            <textarea id="needs" name="needs" rows="3" data-en="What challenges are you facing with customer communication?" data-tr="Müşteri iletişiminde hangi zorluklarla karşılaşıyorsunuz?" placeholder="What challenges are you facing with customer communication?"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button" data-en="Get Your Free Demo" data-tr="Ücretsiz Demonuzu Alın">Get Your Free Demo</button>
