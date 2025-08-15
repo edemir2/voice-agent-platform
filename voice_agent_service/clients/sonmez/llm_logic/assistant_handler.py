@@ -6,23 +6,24 @@ from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 
 def format_docs_for_llm(docs):
+    """
+    Formats a list of documents for the LLM by creating a unique, readable context string.
+    It de-duplicates documents based on 'doc_id' and formats each category differently.
+    """
     if not docs:
         return "No relevant information was found."
 
     formatted_context = []
-    processed_ids = set()
+    # De-duplicate documents based on the 'doc_id' metadata field to avoid sending redundant info to the LLM.
+    unique_docs = {doc.metadata.get('doc_id'): doc for doc in docs}.values()
 
-    for doc in docs:
+    for doc in unique_docs:
         metadata = doc.metadata
-        doc_id = metadata.get('doc_id')
-
-        if not doc_id or doc_id in processed_ids:
-            continue
-        
         details = []
         category = metadata.get('category')
 
         if category == 'product':
+            # Safely parse JSON string for capacity info
             capacity_info = json.loads(metadata.get('capacity', '{}'))
             details.append(f"--- Tent Product: {metadata.get('name')} ---")
             details.append(f"Capacity (Camping): {capacity_info.get('camping', 'N/A')} people")
@@ -39,21 +40,23 @@ def format_docs_for_llm(docs):
 
         if details:
             formatted_context.append("\n".join(details))
-            processed_ids.add(doc_id)
             
     return "\n\n".join(formatted_context)
 
 def run_rag_assistant(user_input, history):
+    """
+    Runs the RAG assistant by retrieving relevant documents, formatting them,
+    and passing them to the LLM with a structured prompt.
+    """
     vectorstore = PineconeVectorStore.from_existing_index(
         index_name="sonmez-products",
         embedding=OpenAIEmbeddings(model="text-embedding-3-small")
     )
-    # Increase top_k to 15 for better recall on list-based questions
-    retriever = vectorstore.as_retriever(search_kwargs={"k": 15})
+    # Increased top_k to 20 for better recall on list-based and summary questions.
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 20})
 
-    # Developer's Note: I've updated the prompt to be more robust. It now explicitly
-    # tells the AI that it might receive context for multiple products and should use
-    # all of it to formulate a comprehensive answer.
+    # The prompt is structured to guide the LLM in using the provided context effectively,
+    # especially for questions that require counting, listing, or comparing items.
     template = """
     You are a helpful and friendly product expert for Sönmez Outdoor.
     Your task is to answer the user's question based *only* on the context provided.
@@ -81,6 +84,7 @@ def run_rag_assistant(user_input, history):
         max_tokens=256
     )
     
+    # The RAG chain links the retriever, document formatter, prompt, LLM, and output parser.
     rag_chain = (
         {
             "context": lambda x: format_docs_for_llm(retriever.invoke(x["question"])),
@@ -92,13 +96,16 @@ def run_rag_assistant(user_input, history):
         | StrOutputParser()
     )
 
+    # Format the conversation history into a simple string for the prompt.
     formatted_history = "\n".join([f"{msg['role']}: {msg['content']}" for msg in history])
 
+    # Invoke the chain with the user's input and the formatted history.
     answer = rag_chain.invoke({
         "question": user_input,
         "history": formatted_history
     })
     
+    # Update the history with the latest turn of the conversation.
     history.append({"role": "user", "content": user_input})
     history.append({"role": "assistant", "content": answer})
     

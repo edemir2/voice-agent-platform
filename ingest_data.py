@@ -48,7 +48,7 @@ def main():
 
         with open(file_path, 'r') as f:
             data = json.load(f)
-            for item in data:
+            for i, item in enumerate(data):
                 # Create a summary text for embedding
                 text_content = f"Name: {item.get('name', item.get('intent_name', ''))}. "
                 if category == 'product':
@@ -58,12 +58,12 @@ def main():
                     text_content += f"Question: {item.get('question_variants', [])}. Answer: {item.get('short_answer_text', '')}"
                 
                 # Create a stable document ID
-                doc_id = f"{category}-{item.get('name', item.get('intent_name', '')).replace(' ', '-')}"
+                doc_id = f"{category}-{item.get('name', item.get('intent_name', 'N/A')).replace(' ', '-')}-{i}"
 
                 # Add the category to the metadata
                 metadata = item.copy()
                 metadata['category'] = category
-                metadata['doc_id'] = doc_id
+                metadata['doc_id'] = doc_id.lower()
                 
                 doc = Document(
                     page_content=text_content,
