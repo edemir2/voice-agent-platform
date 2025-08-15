@@ -2,6 +2,7 @@
 import os
 import json
 from dotenv import load_dotenv
+from langchain_core.documents import Document 
 from langchain_community.document_loaders import JSONLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings
@@ -13,6 +14,21 @@ print("Starting data ingestion process for all sources...")
 # because the script needs API keys for both OpenAI (for embeddings) and Pinecone (for storage).
 load_dotenv()
 
+
+# Flattens a dictionary of metadata, converting lists and dicts to JSON strings,
+# which is a format compatible with Pinecone's metadata requirements.
+def flatten_metadata(metadata: dict) -> dict:
+    new_metadata = {}
+    for key, value in metadata.items():
+        if isinstance(value, (dict, list)):
+            # Convert lists and dictionaries to a JSON string
+            new_metadata[key] = json.dumps(value)
+        elif value is not None:
+            # Keep primitive types (string, int, float, bool) as they are
+            new_metadata[key] = value
+    return new_metadata
+
+
 # Developer's Note: We're centralizing the paths to our data sources here. This makes it
 # easy to add or remove knowledge files in the future without changing the core logic.
 # The os.path.join ensures the file paths are correct regardless of the operating system.
@@ -23,22 +39,25 @@ json_files = [
     os.path.join(data_directory, 'FAQ.json')
 ]
 
-# Developer's Note: The goal here is to gather all pieces of information from our various
-# files into a single list. I'm using LangChain's JSONLoader because it's specifically
-# designed to parse JSON files into a standardized 'Document' format that the rest of
-# the RAG pipeline expects. The jq_schema='.' is a simple way to tell the loader to
-# extract all content from each JSON object.
+
+# Developer's Note: Manually parsing JSON lists to create structured Documents.
+# This approach ensures each JSON object is treated as a separate document.
+# `page_content` is a stringified version for vector search, while the original
+# structured `metadata` is preserved for the RAG model's context.
+
 all_documents = []
 for file_path in json_files:
     if os.path.exists(file_path):
-        loader = JSONLoader(
-            file_path=file_path,
-            jq_schema='.',
-            text_content=False  # I set this to False to preserve the original structure as metadata.
-        )
-        documents = loader.load()
-        all_documents.extend(documents)
-        print(f"Loaded {len(documents)} documents from {os.path.basename(file_path)}.")
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+            for item in data:
+                flat_metadata = flatten_metadata(item)
+                doc = Document(
+                    page_content=json.dumps(item, indent=2),
+                    metadata=flat_metadata
+                )
+                all_documents.append(doc)
+        print(f"Loaded {len(data)} documents from {os.path.basename(file_path)}.")
     else:
         print(f"Warning: File not found at {file_path}. Skipping.")
 

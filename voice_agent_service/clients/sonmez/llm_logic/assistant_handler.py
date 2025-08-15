@@ -4,42 +4,64 @@ from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_pinecone import PineconeVectorStore
 from langchain.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+import json
 
 def format_docs_for_llm(docs):
     """
-    I've rewritten this function to be much smarter. Instead of just
-    mashing raw text together, it now intelligently extracts the most important,
-    human-friendly details from each retrieved document's metadata. This ensures the
-    LLM receives a clean, structured, and easy-to-understand context, which
-    dramatically improves the quality of its answers.
+    Developer's Note: This is the final, robust version of the formatter. It correctly
+    handles different document types (tents, accessories, FAQs) by checking for
+    unique keys in their metadata. It avoids errors by only attempting to parse and
+    format data that is relevant to the specific document type, ensuring a clean
+    and accurate context is always generated for the LLM.
     """
     if not docs:
         return "No relevant product information was found in the knowledge base."
 
-    # I'm creating a set to keep track of product names to avoid showing duplicates.
-    processed_products = set()
+    processed_items = set()
     formatted_context = []
 
     for doc in docs:
-        # The metadata contains the original, complete JSON object for the product.
-        product_data = doc.metadata
-        product_name = product_data.get('name')
+        metadata = doc.metadata
+        details = []
 
-        if product_name and product_name not in processed_products:
-            # Build a clean summary for each unique product.
-            details = [
-                f"--- Product: {product_name} ---",
-                f"Capacity (Camping): {product_data.get('capacity', {}).get('camping', 'N/A')} people",
-                f"Capacity (Glamping): {product_data.get('capacity', {}).get('glamping', 'N/A')} people",
-                f"Weight: {product_data.get('weight', 'N/A')}",
-                f"Inflation Time: {product_data.get('inflation_time', 'N/A')}",
-                f"Price: Starts at ${product_data.get('colors', [{}])[0].get('price', 'N/A')}"
-            ]
+        # Determine a unique identifier for the document to avoid duplicates.
+        unique_id = metadata.get('name') or metadata.get('intent_name')
+        if not unique_id or unique_id in processed_items:
+            continue
+
+        # --- FIX: Universal logic to handle Tents, Accessories, and FAQs ---
+
+        # Case 1: Document is a Tent Product (identified by 'capacity' and 'inflation_time')
+        if 'capacity' in metadata and 'inflation_time' in metadata:
+            capacity_info = json.loads(metadata.get('capacity', '{}'))
+            colors_info = json.loads(metadata.get('colors', '[]'))
+            
+            details.append(f"--- Tent Product: {metadata.get('name')} ---")
+            details.append(f"Capacity (Camping): {capacity_info.get('camping', 'N/A')} people")
+            details.append(f"Capacity (Glamping): {capacity_info.get('glamping', 'N/A')} people")
+            details.append(f"Weight: {metadata.get('weight', 'N/A')}")
+            details.append(f"Inflation Time: {metadata.get('inflation_time', 'N/A')}")
+            if colors_info:
+                details.append(f"Price: Starts at ${colors_info[0].get('price', 'N/A')}")
+
+        # Case 2: Document is an Accessory (identified by 'sku' and 'price')
+        elif 'sku' in metadata and 'price' in metadata:
+            details.append(f"--- Accessory: {metadata.get('name')} ---")
+            details.append(f"Category: {metadata.get('category', 'N/A')}")
+            details.append(f"Price: ${metadata.get('price')}")
+
+        # Case 3: Document is an FAQ (identified by 'intent_name')
+        elif 'intent_name' in metadata:
+            question_variants = json.loads(metadata.get('question_variants', '[]'))
+            details.append(f"--- FAQ: {metadata.get('intent_name')} ---")
+            details.append(f"Relevant Questions: {', '.join(question_variants)}")
+            details.append(f"Answer: {metadata.get('short_answer_voice')}")
+
+        if details:
             formatted_context.append("\n".join(details))
-            processed_products.add(product_name)
+            processed_items.add(unique_id)
 
-    return "\n\n".join(formatted_context)
-
+    return "\n\n".join(formatted_context) if formatted_context else "No relevant information was found."
 
 def run_rag_assistant(user_input, history):
     """
